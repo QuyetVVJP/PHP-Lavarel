@@ -1,33 +1,34 @@
 <?php
 
-// Khai bao bien 
-// Ky tu $
-// Khi khoi tao bien, bat buoc phai co gia tri cho bien
-// Ten bien khong duoc bat dau bang so
-// Ten bien phan biet chua hoa chu thuong, apha, _
-
 /*
- Kieu du lieu
- * boolean
- * int
- * double
- * float
- * string
- * array 
- * object
+Toan tu
+ * $a + $b
+ * $a - $b
+ * $a * $b
+ * $a / $b
+ * $a % $b
+ * $a--
+ * $a++
+ * $a == $b
+ * $a >= $b
+ * $a <= $b
+ * $a > $b
+ * $a != $b
+ * && and
+ * || or
+ * ! phu dinh
  * 
- * 
- * Pham vi 
- * Bien toan cuc: Duoc truy cap tu bat cu dau, nhung phai co tu khoa GLOBAL o phia truoc bien
- * Bien cuc bo: bien khai bao trong 1 ham
- * bien static: Bien tinh, khong mat khi ket thuc ham
+ * +=
+ * -=
+ * *=
+ *
  *  */
 
+// PHP so sanh == khong quan tam kieu bien, chi quan tam gia tri
+$a = 1;
+$b = "1";
+var_dump($a == $b); // cho ket qua TRUE 1=1
 
+// PHP so sanh ==3 so sanh kieu du lieu va gia tri
+var_dump($a === $b); // cho ket qua FALSE  khong so sanh int voi string
 
-
-function test_var(){
-    $x = 0;  // bien cuc bo
-    global $y; // bien toan cuc
-    static $s= 2;
-}
