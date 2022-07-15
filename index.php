@@ -2,46 +2,13 @@
 
 /*
 
-Function()
- * co gia tri tra ve
- * khong co gia tri tra ve
- *
- Require, include: Thêm thư viện
- * Require: sau khi chen file neu co loi xay ra thi se xuat ra thong bao va khong chay tiep nua
- * Include: sau khi chen file neu co loi xay ra thi chương trình van tiep tuc chay 
+Vong lap for, while, do while, foreach
  *  */
-
-function showName(){
-    echo "QUyet";
+$color = array("R", "G", "B");
+foreach ($color as $value){
+    echo "$value <br>";
 }
 
-showName();
-
-
-function getName(){
-    return "Quyet";
+foreach ($color as $key => $value){
+    echo $key.'_'.$value."<br>"; // lay ra index va gia tri
 }
-
-var_dump(getName());
-
-// Tham trị
-function showValue($value){
-    echo $value."<br>";
-}
-
-showValue("Test value");
-
-
-// Tham chiếu: truyền vào địa chỉ bộ nhớ 
-
-function changeValue(&$value){
-    $value = 20;
-}
-
-$hi = 10;
-
-changeValue($hi);
-var_dump($hi);
-
-
-
