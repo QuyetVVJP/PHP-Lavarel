@@ -2,33 +2,21 @@
 
 /*
 
- * Chuỗi để trong dấu ngoặc kép hoặc ngoặc đơn
- * - Dấu ngoặc kép "", các biến bên trong chuỗi sẽ được parse
- * - Dấu ngoặc đơn '', các biến bên trong chuỗi không được parse
+ * Mảng tuần tự: Truy xuất phần tủ theo index
+ * Mảng không tuần tự: index không nhất thiết phải là kiểu int, có thể là chữ, truy xuất phần tử theo key
+ * Mảng đa chiều: Giống như json
  *  */
 
-$a = "Quyet";
-$b = "Hello $a";
-echo $b; // Hello Quyet
+//$a = [1,2,3];
+//echo $a[2]; // 3
 
-$c = 'Hello $a';
-echo $c; // Hello $a
-
-// Nối chuỗi
-echo $a.$b; // Quyet Hello
-// Lấy độ dài chuỗi
-echo strlen($c);
-
-// Đếm số từ trong chuỗi
-echo str_word_count($c);
-
-// Tìm kiếm trong chuỗi
-echo strpos("hello world", "world"); // trả về vị trí bắt đầu của từ world là vị trí thứ 6
-
-
-// Thay thế ký tự trong chuỗi
-echo str_replace("world", "Quyet", "Hello world"); // output: Hello Quyet
-
-
-
-
+$a = [
+    "key1" => 1,
+    "key2" => 2,
+    "key4" =>[
+        1,
+        "item1" => "ABC"
+    ]
+];
+$a["key3"] = 3;
+var_dump($a);
