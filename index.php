@@ -1,34 +1,34 @@
 <?php
 
 /*
-Toan tu
- * $a + $b
- * $a - $b
- * $a * $b
- * $a / $b
- * $a % $b
- * $a--
- * $a++
- * $a == $b
- * $a >= $b
- * $a <= $b
- * $a > $b
- * $a != $b
- * && and
- * || or
- * ! phu dinh
- * 
- * +=
- * -=
- * *=
- *
+
+ * Chuỗi để trong dấu ngoặc kép hoặc ngoặc đơn
+ * - Dấu ngoặc kép "", các biến bên trong chuỗi sẽ được parse
+ * - Dấu ngoặc đơn '', các biến bên trong chuỗi không được parse
  *  */
 
-// PHP so sanh == khong quan tam kieu bien, chi quan tam gia tri
-$a = 1;
-$b = "1";
-var_dump($a == $b); // cho ket qua TRUE 1=1
+$a = "Quyet";
+$b = "Hello $a";
+echo $b; // Hello Quyet
 
-// PHP so sanh ==3 so sanh kieu du lieu va gia tri
-var_dump($a === $b); // cho ket qua FALSE  khong so sanh int voi string
+$c = 'Hello $a';
+echo $c; // Hello $a
+
+// Nối chuỗi
+echo $a.$b; // Quyet Hello
+// Lấy độ dài chuỗi
+echo strlen($c);
+
+// Đếm số từ trong chuỗi
+echo str_word_count($c);
+
+// Tìm kiếm trong chuỗi
+echo strpos("hello world", "world"); // trả về vị trí bắt đầu của từ world là vị trí thứ 6
+
+
+// Thay thế ký tự trong chuỗi
+echo str_replace("world", "Quyet", "Hello world"); // output: Hello Quyet
+
+
+
 
