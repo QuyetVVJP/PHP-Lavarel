@@ -1,20 +1,33 @@
 <?php
 
-$a = 0;
-
-echo "QuyetVV";
-var_dump($a);
-$a = $a +1;
-echo $a;
-die(); //exit()
-// comment 1 dong
-# comment 1 dong
-/*
-    comment nhieu dong
- *  */
+// Khai bao bien 
+// Ky tu $
+// Khi khoi tao bien, bat buoc phai co gia tri cho bien
+// Ten bien khong duoc bat dau bang so
+// Ten bien phan biet chua hoa chu thuong, apha, _
 
 /*
-    Lenh echo -> render la noi dung chuoi
- * var_dump("Quyet") -> in ra man hinh chuoi va kieu bien
- * Lenh die() -> dung de debug check loi
+ Kieu du lieu
+ * boolean
+ * int
+ * double
+ * float
+ * string
+ * array 
+ * object
+ * 
+ * 
+ * Pham vi 
+ * Bien toan cuc: Duoc truy cap tu bat cu dau, nhung phai co tu khoa GLOBAL o phia truoc bien
+ * Bien cuc bo: bien khai bao trong 1 ham
+ * bien static: Bien tinh, khong mat khi ket thuc ham
  *  */
+
+
+
+
+function test_var(){
+    $x = 0;  // bien cuc bo
+    global $y; // bien toan cuc
+    static $s= 2;
+}
