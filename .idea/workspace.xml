@@ -1,106 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="1. Tao ung dung dau tien">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/.styleci.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Console/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Exceptions/Handler.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/Authenticate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/TrimStrings.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/TrustHosts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/TrustProxies.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AuthServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/EventServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/artisan" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/bootstrap/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/bootstrap/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/app.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/broadcasting.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/cache.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/cors.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/filesystems.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/hashing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/logging.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/queue.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/sanctum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/services.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/factories/UserFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/migrations/2019_12_14_000001_create_personal_access_tokens_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/database/seeders/DatabaseSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/lang/en/auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/lang/en/pagination.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/lang/en/passwords.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/lang/en/validation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/phpunit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/public/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/welcome.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/api.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/channels.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/console.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/app/public/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/cache/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/cache/data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/sessions/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/testing/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/framework/views/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/storage/logs/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/tests/CreatesApplication.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/tests/Feature/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/tests/TestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/tests/Unit/ExampleTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Laravel_Tutorial/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/mat truoc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/post_get.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/upload_file.php" beforeDir="false" />
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: &#10;- Bat che do bao tri -&gt; php artisan down">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/Laravel_Tutorial/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -224,7 +137,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="2C1gMb7EPauaj0Klsy6YFQpJYjt" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -248,8 +163,22 @@
       <updated>1657975462251</updated>
       <workItem from="1657975464986" duration="686000" />
       <workItem from="1657977263732" duration="1390000" />
-      <workItem from="1658059357401" duration="3174000" />
+      <workItem from="1658059357401" duration="3597000" />
+      <workItem from="1658062995866" duration="59000" />
+      <workItem from="1658063065863" duration="47000" />
+      <workItem from="1658063123858" duration="51000" />
+      <workItem from="1658063185390" duration="68000" />
+      <workItem from="1658063263192" duration="1042000" />
+      <workItem from="1658064548900" duration="1499000" />
     </task>
+    <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
+      <created>1658062693931</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1658062693931</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +197,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. Tao ung dung dau tien" />
-    <option name="LAST_COMMIT_MESSAGE" value="1. Tao ung dung dau tien" />
+    <MESSAGE value="2. Directory Structure - Request LifeCycle" />
+    <option name="LAST_COMMIT_MESSAGE" value="2. Directory Structure - Request LifeCycle" />
   </component>
 </project>
