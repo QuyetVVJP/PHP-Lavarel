@@ -5,6 +5,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\ProductsController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\Admin\DashboardController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,12 @@ Route::prefix('categories')->group(function (){
 
 });
 
-Route::prefix('admin')->group(function (){
-        Route::resource('products', ProductsController::class);
+
+Route::get('/', function (){
+    return '<h1> Trang chu UNICODE</h1>';
+})->name('home');
+
+Route::middleware('auth.admin')->prefix('admin')->group(function (){
+        Route::get('/',[DashboardController::class,'index']);
+        Route::resource('products', ProductsController::class)->middleware('auth.admin.product');
 });
