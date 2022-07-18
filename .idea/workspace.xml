@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: &#10;- Bat che do bao tri -&gt; php artisan down">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +169,8 @@
       <workItem from="1658063123858" duration="51000" />
       <workItem from="1658063185390" duration="68000" />
       <workItem from="1658063263192" duration="1042000" />
-      <workItem from="1658064548900" duration="1499000" />
+      <workItem from="1658064548900" duration="3204000" />
+      <workItem from="1658106517311" duration="6074000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -178,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658062693931</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down">
+      <created>1658066493001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1658066493001</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1. Tao ung dung dau tien" />
     <MESSAGE value="2. Directory Structure - Request LifeCycle" />
-    <option name="LAST_COMMIT_MESSAGE" value="2. Directory Structure - Request LifeCycle" />
+    <MESSAGE value="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down" />
+    <option name="LAST_COMMIT_MESSAGE" value="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down" />
   </component>
 </project>

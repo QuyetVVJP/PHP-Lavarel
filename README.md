@@ -73,6 +73,9 @@ index.php -> bootstarp/app.php
 -> View 
 -> trả về response cho Client
 
+
+Route: get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware
+
 # Blog 
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
 
