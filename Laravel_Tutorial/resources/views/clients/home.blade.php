@@ -13,7 +13,14 @@
 
 @section('content')
     <h1>Trang chu</h1>
-    @datetime("2021-12-15 15:00:30")
+
+    @env('production')
+        <p>Moi truong production</p>
+        @elseenv('test')
+            <p> moi truong TEST</p>
+        @else
+            <p>Moi truong dev</p>
+    @endenv
 @endsection
 
 @section('css')

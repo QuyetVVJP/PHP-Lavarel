@@ -102,6 +102,8 @@ Phương thức của request:
 - master layout
 - @csrf, @method('PUT)
 - @stack: thay the, @push: them moi (phia duoi), @prepend: them moi (len tren)
+- Directive tu dinh nghia, 
+- Cache View: mặc định cache vào folder storage/framework/views
 
 
 # Blog 
