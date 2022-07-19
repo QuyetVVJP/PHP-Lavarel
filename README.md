@@ -99,6 +99,7 @@ Phương thức của request:
 - include View
 - @section, @yield
 - @show, @parent
+-  master layout
 
 
 # Blog 

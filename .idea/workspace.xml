@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="9. Blade Template Engine 1,2">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="9. Blade Template Engine 3&#10;@section @yield">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/add.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/edit.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/file.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/list.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +182,7 @@
       <workItem from="1658063263192" duration="1042000" />
       <workItem from="1658064548900" duration="3204000" />
       <workItem from="1658106517311" duration="17467000" />
-      <workItem from="1658210256130" duration="12060000" />
+      <workItem from="1658210256130" duration="14029000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -244,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658226890421</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="9. Blade Template Engine 3&#10;@section @yield">
+      <created>1658228934295</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658228934295</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +274,7 @@
     <MESSAGE value="8.View&#10;file blade.php su dung template engie" />
     <MESSAGE value="9. HTTP Request" />
     <MESSAGE value="9. Blade Template Engine 1,2" />
-    <option name="LAST_COMMIT_MESSAGE" value="9. Blade Template Engine 1,2" />
+    <MESSAGE value="9. Blade Template Engine 3&#10;@section @yield" />
+    <option name="LAST_COMMIT_MESSAGE" value="9. Blade Template Engine 3&#10;@section @yield" />
   </component>
 </project>

@@ -19,5 +19,5 @@ use App\Http\Controllers\Home2Controller;
 |
 */
 
-Route::get('/', [HomeController::class,'index']);
-Route::get('/san-pham', [HomeController::class,'products']);
+Route::get('/', [HomeController::class,'index'])->name('home');
+Route::get('/san-pham', [HomeController::class,'products'])->name('product');
