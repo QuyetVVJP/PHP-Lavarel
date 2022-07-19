@@ -21,6 +21,11 @@
         @else
             <p>Moi truong dev</p>
     @endenv
+
+{{--            goi gia tri tu controller truyen vao Alert--}}
+    <x-alert type="info" :content="$msg" data-icon="youtube"/>
+{{--            <x-input.button/>--}}
+{{--            <x-forms.button/>--}}
 @endsection
 
 @section('css')

@@ -12,6 +12,7 @@
 
 @section('content')
     <h1>SAN PHAM</h1>
+    <x-package-alert/>
     @push('scripts')
         <script>
             console.log('Put lan 2')

@@ -10,6 +10,7 @@ class HomeController extends Controller
     public $data = [];
     public function index(){
         $this->data['title'] = 'Trang chu';
+        $this->data['msg'] = 'Dang ky tai khoan thanh cong';
         return view('clients.home', $this->data);
     }
 

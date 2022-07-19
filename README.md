@@ -104,7 +104,8 @@ Phương thức của request:
 - @stack: thay the, @push: them moi (phia duoi), @prepend: them moi (len tren)
 - Directive tu dinh nghia, 
 - Cache View: mặc định cache vào folder storage/framework/views
-
+- Component: php artisan make:component Alert -> hệ thống sẽ tạo ra class trong thư mục app\View\Components 
+và view trong thư mục resources/views/components
 
 # Blog 
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
