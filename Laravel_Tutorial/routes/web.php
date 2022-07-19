@@ -38,6 +38,11 @@ Route::prefix('categories')->group(function (){
     // Xoa chuyen muc
     Route::delete('/delete/{id}',[CategoriesController::class, 'deleteCategory'])->name('categories.delete');
 
+    // Hien thi form upload file
+    Route::get('/upload', [CategoriesController::class,'getFile']);
+    // Xu ly file
+    Route::post('/upload', [CategoriesController::class, 'handleFile'])->name('categories.upload');
+
 });
 
 Route::get('san-pham/{id}',[HomeController::class, 'getProductDetail']);

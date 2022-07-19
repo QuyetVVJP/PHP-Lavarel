@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="7.Middleware">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="8.View&#10;file blade.php su dung template engie">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/CategoriesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +176,8 @@
       <workItem from="1658063185390" duration="68000" />
       <workItem from="1658063263192" duration="1042000" />
       <workItem from="1658064548900" duration="3204000" />
-      <workItem from="1658106517311" duration="16848000" />
+      <workItem from="1658106517311" duration="17467000" />
+      <workItem from="1658210256130" duration="5004000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -211,7 +214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658141750388</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="8.View&#10;file blade.php su dung template engie">
+      <created>1658154217055</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1658154217055</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +245,7 @@
     <MESSAGE value="4.Route&#10;get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware, call function from Controller&#10;Error 419: thieu token" />
     <MESSAGE value="6.Controller" />
     <MESSAGE value="7.Middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.Middleware" />
+    <MESSAGE value="8.View&#10;file blade.php su dung template engie" />
+    <option name="LAST_COMMIT_MESSAGE" value="8.View&#10;file blade.php su dung template engie" />
   </component>
 </project>

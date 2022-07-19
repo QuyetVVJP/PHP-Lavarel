@@ -12,7 +12,7 @@
 # PHP Lavarel
 [Link tham khảo] (https://www.youtube.com/watch?v=sMXkSWFlV28&list=PL8y3hWbcppt2nWBglaxrQm_A5sRjstdnK)
 
-Cấu trúc thư mục
+## Cấu trúc thư mục
 ```bash
 ─Laravel_Tutorial
 ├───app  // Chứa tất cả các Class của project
@@ -73,9 +73,23 @@ index.php -> bootstarp/app.php
 -> View 
 -> trả về response cho Client
 
+## Controler
+## Middleware
+## View
 
-Route: get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware
+## Route
 
+get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware
+
+## HTTP Request
+
+khai báo  public function index(Request $request) để lấy thông tin của request hiện tại
+
+Phương thức của request:
+- all() : lay toan bo du lieu
+- path)(): lay gia tri duong dan tru ten mien
+- is(), url(), fullUrl(), isMethod(), ip(), server(), header(), input(), name
+- Upload file
 # Blog 
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
 
