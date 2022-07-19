@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="8.View&#10;file blade.php su dung template engie">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="9. HTTP Request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/CategoriesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/CategoriesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/categories/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -177,7 +176,7 @@
       <workItem from="1658063263192" duration="1042000" />
       <workItem from="1658064548900" duration="3204000" />
       <workItem from="1658106517311" duration="17467000" />
-      <workItem from="1658210256130" duration="5004000" />
+      <workItem from="1658210256130" duration="10030000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658154217055</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="9. HTTP Request">
+      <created>1658216102798</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1658216102798</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +252,7 @@
     <MESSAGE value="6.Controller" />
     <MESSAGE value="7.Middleware" />
     <MESSAGE value="8.View&#10;file blade.php su dung template engie" />
-    <option name="LAST_COMMIT_MESSAGE" value="8.View&#10;file blade.php su dung template engie" />
+    <MESSAGE value="9. HTTP Request" />
+    <option name="LAST_COMMIT_MESSAGE" value="9. HTTP Request" />
   </component>
 </project>

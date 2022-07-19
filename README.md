@@ -90,6 +90,15 @@ Phương thức của request:
 - path)(): lay gia tri duong dan tru ten mien
 - is(), url(), fullUrl(), isMethod(), ip(), server(), header(), input(), name
 - Upload file
+
+## Blade template laravel
+- là template Engine. (Template Engine nhận data và template rồi render ra HTML trả cho user)
+- {{$variable}} : hiển thị dữ liệu dạng thực thể
+- {!! $variable} : hiển thị dữ liệu có biên dịch mã HTML
+- for, while, foreach, forelse, if, ifelse, switch case
+- include View
+
+
 # Blog 
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
 
