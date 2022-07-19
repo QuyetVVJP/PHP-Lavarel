@@ -13,6 +13,7 @@
 
 @section('content')
     <h1>Trang chu</h1>
+    @datetime("2021-12-15 15:00:30")
 @endsection
 
 @section('css')

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="9. Blade Template Engine 3&#10;@section @yield">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment=" Blade Template Engine 4&#10; master layout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +185,7 @@
       <workItem from="1658063263192" duration="1042000" />
       <workItem from="1658064548900" duration="3204000" />
       <workItem from="1658106517311" duration="17467000" />
-      <workItem from="1658210256130" duration="14029000" />
+      <workItem from="1658210256130" duration="16949000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -247,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658228934295</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" Blade Template Engine 4&#10; master layout">
+      <created>1658230991584</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1658230991584</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +285,7 @@
     <MESSAGE value="9. HTTP Request" />
     <MESSAGE value="9. Blade Template Engine 1,2" />
     <MESSAGE value="9. Blade Template Engine 3&#10;@section @yield" />
-    <option name="LAST_COMMIT_MESSAGE" value="9. Blade Template Engine 3&#10;@section @yield" />
+    <MESSAGE value=" Blade Template Engine 4&#10; master layout" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Blade Template Engine 4&#10; master layout" />
   </component>
 </project>

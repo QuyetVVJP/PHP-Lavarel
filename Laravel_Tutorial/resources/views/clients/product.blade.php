@@ -12,6 +12,12 @@
 
 @section('content')
     <h1>SAN PHAM</h1>
+    @push('scripts')
+        <script>
+            console.log('Put lan 2')
+        </script>
+    @endpush
+
 @endsection
 
 @section('css')
@@ -21,4 +27,10 @@
 @section('js')
 
 @endsection
+
+@push('scripts')
+    <script>
+        console.log('Put lan 1')
+    </script>
+@endpush
 

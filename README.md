@@ -99,7 +99,9 @@ Phương thức của request:
 - include View
 - @section, @yield
 - @show, @parent
--  master layout
+- master layout
+- @csrf, @method('PUT)
+- @stack: thay the, @push: them moi (phia duoi), @prepend: them moi (len tren)
 
 
 # Blog 
