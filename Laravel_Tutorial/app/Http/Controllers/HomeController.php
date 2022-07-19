@@ -7,26 +7,14 @@ use Illuminate\Support\Facades\View;
 
 class HomeController extends Controller
 {
-    //Action index()
+    public $data = [];
     public function index(){
-        $title = "Hoc lap trinh web";
-        $content = 'Hoc laravel';
-
-        // nen su dung compact de truyen du lieu
-        return view('home', compact('title', 'content')); // load view home.blade.php
-
-        //return View::make('home', compact('title', 'content'));
-//        $contentView =  view('home')->render();
-//        $contentView = $contentView->render(); // chuyen ve dang HTML tho
-//        dd($contentView);
-//        return $contentView;
+        $this->data['title'] = 'Trang chu';
+        return view('clients.home', $this->data);
     }
 
-    public function getCategories($id){
-        return 'chuyen muc'.$id;
-    }
-
-    public function getProductDetail($id){
-        return view('products.detail', compact('id'));
+    public function products(){
+        $this->data['title'] = 'san pham';
+        return view('clients.product', $this->data);
     }
 }

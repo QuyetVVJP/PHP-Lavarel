@@ -97,6 +97,8 @@ Phương thức của request:
 - {!! $variable} : hiển thị dữ liệu có biên dịch mã HTML
 - for, while, foreach, forelse, if, ifelse, switch case
 - include View
+- @section, @yield
+- @show, @parent
 
 
 # Blog 
