@@ -22,11 +22,33 @@ class HomeController extends Controller
 
     public function getAdd(){
         $this->data['title'] = 'san pham';
+        $this->data['errorMsg'] = 'Vui long kiem tra lai du lieu';
         return view('clients.add', $this->data);
     }
 
     public function postAdd(Request $request){
-        dd($request);
+
+        $rules = [
+            'product_name' =>'required|min:6',
+            'product_price' => 'required|integer'
+        ];
+//        $message = [
+//            'product_name.required' => 'Tên sản phẩm bắt buộc phải nhập',
+//            'product_name.min' => 'Tên sản phẩm không được nhỏ hơn :min kí tụ',
+//            'product_price.required' => 'Giá sản phẩm bắt buộc phải nhập',
+//            'product_name.integer' => 'Giá sản phẩm phải là số tự nhiên',
+//        ];
+
+        $message = [
+            'required' => 'Trường :attribute bắt buộc phải nhập nhé',
+            'min' => 'Trường :attribute không được nhỏ hơn :min kí tự'
+        ];
+
+        $request->validate(
+            $rules, @$message
+        );
+
+        // Xu ly viec them du lieu vao database
     }
 
     public function putAdd(Request $request){
