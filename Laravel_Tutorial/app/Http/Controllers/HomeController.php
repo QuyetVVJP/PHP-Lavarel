@@ -16,6 +16,7 @@ class HomeController extends Controller
 
     public function products(){
         $this->data['title'] = 'san pham';
+        $this->data['content'] = 'san pham';
         return view('clients.product', $this->data);
     }
 

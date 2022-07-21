@@ -15,7 +15,7 @@ class Alert extends Component
     public $content;
     public $dataIcon;
 
-    public function __construct($type='success', $content, $dataIcon='check' )
+    public function __construct($type='success', $content='', $dataIcon='check' )
     {
         $this->type = $type;
         $this->content = $content;

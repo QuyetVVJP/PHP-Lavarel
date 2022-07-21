@@ -4,11 +4,7 @@
     <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Providers/AppServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/product.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/View/Components/Alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/View/Components/Alert.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,6 +181,8 @@
       <workItem from="1658064548900" duration="3204000" />
       <workItem from="1658106517311" duration="17467000" />
       <workItem from="1658210256130" duration="21109000" />
+      <workItem from="1658331655875" duration="331000" />
+      <workItem from="1658394080150" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
