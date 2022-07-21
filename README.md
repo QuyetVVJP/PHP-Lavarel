@@ -115,6 +115,7 @@ và view trong thư mục resources/views/components
 ## Validation
 - Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session
 - custom message validation
+- FormRequest()
 
 # Project
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)

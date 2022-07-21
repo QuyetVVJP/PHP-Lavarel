@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
+use App\Http\Requests\ProductRequest;
 
 class HomeController extends Controller
 {
@@ -26,12 +27,14 @@ class HomeController extends Controller
         return view('clients.add', $this->data);
     }
 
-    public function postAdd(Request $request){
+    public function postAdd(ProductRequest $productRequest){
 
-        $rules = [
-            'product_name' =>'required|min:6',
-            'product_price' => 'required|integer'
-        ];
+        dd($productRequest);
+
+//        $rules = [
+//            'product_name' =>'required|min:6',
+//            'product_price' => 'required|integer'
+//        ];
 //        $message = [
 //            'product_name.required' => 'Tên sản phẩm bắt buộc phải nhập',
 //            'product_name.min' => 'Tên sản phẩm không được nhỏ hơn :min kí tụ',
@@ -39,14 +42,14 @@ class HomeController extends Controller
 //            'product_name.integer' => 'Giá sản phẩm phải là số tự nhiên',
 //        ];
 
-        $message = [
-            'required' => 'Trường :attribute bắt buộc phải nhập nhé',
-            'min' => 'Trường :attribute không được nhỏ hơn :min kí tự'
-        ];
-
-        $request->validate(
-            $rules, @$message
-        );
+//        $message = [
+//            'required' => 'Trường :attribute bắt buộc phải nhập nhé',
+//            'min' => 'Trường :attribute không được nhỏ hơn :min kí tự'
+//        ];
+//
+//        $request->validate(
+//            $rules, @$message
+//        );
 
         // Xu ly viec them du lieu vao database
     }
