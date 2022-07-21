@@ -38,15 +38,27 @@ Route::get('demo-response', function (){
 //    return $response;
 
 //      return view('clients.demo-test');
-    $response = response()->view('clients.demo-test',[
-        'title' => 'Hoc PHP'
-    ], 201)->header('Content-type','application/json');
-    return $response;
+//    $response = response()->view('clients.demo-test',[
+//        'title' => 'Hoc PHP'
+//    ], 201)->header('Content-type','application/json');
+//    return $response;
+//    echo old('username');
+    return view('clients.demo-test');
+})->name('demo-response');
+
+Route::post('demo-response', function (Request $request){
+    if(!empty($request->username)){
+
+        return back()->withInput()->with('msg','validate  thanh cong');
+    };
+
+    return redirect()->route('demo-response')->with('msg','validate khong thanh cong');
+
 });
 
 
-Route::get('demo-response-2', function (Request $request){
-    return $request->cookie('unicode');
-});
-
-Route::get('lay-thong-tin',[HomeController::class,'getArr']);
+//Route::get('demo-response-2', function (Request $request){
+//    return $request->cookie('unicode');
+//});
+//
+//Route::get('lay-thong-tin',[HomeController::class,'getArr']);
