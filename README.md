@@ -110,6 +110,7 @@ và view trong thư mục resources/views/components
 ## HTTP Response
 - response(), status code, gan thong tin vao Header: Content-type, cookie
 - redirect(), back()
+- Download file, img
 
 # Project
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)

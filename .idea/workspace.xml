@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="HTTP Response 1&#10;- response(), status code&#10;- Gan thong tin vao Header: content-type, cookie">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="HTTP Response 2&#10;redirect()&#10;back()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/demo-test.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/demo-test.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +185,7 @@
       <workItem from="1658210256130" duration="21109000" />
       <workItem from="1658331655875" duration="331000" />
       <workItem from="1658394080150" duration="674000" />
-      <workItem from="1658402483118" duration="4038000" />
+      <workItem from="1658402483118" duration="6612000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -290,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658404983112</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="HTTP Response 2&#10;redirect()&#10;back()">
+      <created>1658406603996</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658406603996</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,6 +332,7 @@
     <MESSAGE value=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear" />
     <MESSAGE value="fix bug thieu gia tri cua bien $content" />
     <MESSAGE value="HTTP Response 1&#10;- response(), status code&#10;- Gan thong tin vao Header: content-type, cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="HTTP Response 1&#10;- response(), status code&#10;- Gan thong tin vao Header: content-type, cookie" />
+    <MESSAGE value="HTTP Response 2&#10;redirect()&#10;back()" />
+    <option name="LAST_COMMIT_MESSAGE" value="HTTP Response 2&#10;redirect()&#10;back()" />
   </component>
 </project>

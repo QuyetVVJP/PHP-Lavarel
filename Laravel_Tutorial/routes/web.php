@@ -62,3 +62,9 @@ Route::post('demo-response', function (Request $request){
 //});
 //
 //Route::get('lay-thong-tin',[HomeController::class,'getArr']);
+
+
+Route::get('download-image',[HomeController::class,'downloadImage'])->name('download-image');
+
+
+
