@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="fix bug thieu gia tri cua bien $content">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/View/Components/Alert.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/View/Components/Alert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +183,8 @@
       <workItem from="1658106517311" duration="17467000" />
       <workItem from="1658210256130" duration="21109000" />
       <workItem from="1658331655875" duration="331000" />
-      <workItem from="1658394080150" duration="186000" />
+      <workItem from="1658394080150" duration="674000" />
+      <workItem from="1658402483118" duration="2401000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -268,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658236858801</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix bug thieu gia tri cua bien $content">
+      <created>1658394312639</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1658394312639</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +308,7 @@
     <MESSAGE value=" Blade Template Engine 4&#10; master layout" />
     <MESSAGE value=" Blade Template Engine 5&#10; @csrf @method('PUT')&#10; @stack, @push, @prepend" />
     <MESSAGE value=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear" />
+    <MESSAGE value="fix bug thieu gia tri cua bien $content" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix bug thieu gia tri cua bien $content" />
   </component>
 </project>

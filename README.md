@@ -107,8 +107,20 @@ Phương thức của request:
 - Component: php artisan make:component Alert -> hệ thống sẽ tạo ra class trong thư mục app\View\Components 
 và view trong thư mục resources/views/components
 
-# Blog 
+# Project
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
+
+Chức năng
+- Danh sách
+- CRUD
+- Tìm kiếm
+- Phân trang
+- sắp xếp
+- Login, logout
+- Authen, Author
+- Cronjob send report by Email
+- DB: User - Role
+- Alert
 
 # Deploy
 [Link tham khảo] (https://www.youtube.com/watch?v=x2MbZKamYaM)

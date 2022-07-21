@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Response;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Admin\ProductsController;
@@ -24,3 +25,28 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
 Route::get('/them-san-pham', [HomeController::class,'getAdd']);
 //Route::post('/them-san-pham', [HomeController::class,'postAdd']);
 Route::put("/them-san-pham",[HomeController::class,'putAdd']);
+
+Route::get('demo-response', function (){
+//    $response = new Response('Hoc lap trinh tai unicode', 200);
+//    dd($response);
+    $content = '<h2>Hoc lap trinh tai Unicode</h2>';
+//    $content_json = json_encode([
+//        'item 1', 'item 2', 'item 3'
+//    ]);
+//    $response = response($content_json, 200)->header('Content-type','application/json');
+//    $response = (new Response())->cookie('unicode','Test ',30);
+//    return $response;
+
+//      return view('clients.demo-test');
+    $response = response()->view('clients.demo-test',[
+        'title' => 'Hoc PHP'
+    ], 201)->header('Content-type','application/json');
+    return $response;
+});
+
+
+Route::get('demo-response-2', function (Request $request){
+    return $request->cookie('unicode');
+});
+
+Route::get('lay-thong-tin',[HomeController::class,'getArr']);

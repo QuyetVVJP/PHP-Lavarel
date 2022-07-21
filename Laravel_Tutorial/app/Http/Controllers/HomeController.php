@@ -33,4 +33,13 @@ class HomeController extends Controller
 //        dd($request);
         return 'PUT';
     }
+
+    public function getArr(){
+        $content = [
+            'name' => 'Quyet',
+            'age' => '27'
+        ];
+
+        return $content;
+    }
 }
