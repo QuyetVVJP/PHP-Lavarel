@@ -29,14 +29,11 @@ class HomeController extends Controller
         return view('clients.add', $this->data);
     }
 
-    public function postAdd(Request $request){
+    public function postAdd(ProductRequest $productRequest){
 
-                $rules = [
-            'product_name' => ['required', 'min:6', function($attribute, $value, $fail){
-                  isUppercase($value,'truong nay khong hop le', $fail);
-            }],
-            'product_price' => 'required|integer'
-
+        $rules = [
+            'product_name' => ['required', 'min:6'],
+            'product_price' => ['required', 'integer']
         ];
 
                 $messages = [
@@ -44,24 +41,30 @@ class HomeController extends Controller
                     'min' => 'Trường :attribute không được nhỏ hơn :min kí tụ',
                     'required' => 'Trường :attribute bắt buộc phải nhập',
                     'integer' => 'Trường :attribute phải là số tự nhiên',
-                    'uppercase' => 'Truong :attribute phai viet hoa'
         ];
 
                 $attributes = [
                     'product_name' => 'Tên sản phẩm',
                     'product_price' => 'Giá sản phẩm'
                 ];
-        $validator = Validator::make($request->all(), $rules, $messages, $attributes);
+//        $validator = Validator::make($request->all(), $rules, $messages, $attributes);
+//
 //        $validator->validate();
-        if($validator->fails()){
-            $validator->errors()->add('msg','Vui long kiem tra lai du lieu');
-            //return 'Validate that bai';
-        }else{
-//            return 'Validate thanh cong';
-            return redirect(route('product'))->with('msg','Validate thanh cong');
-        }
 
-        return back()->withErrors($validator);
+//       $productRequest->validate($rules, $messages);
+
+        return response()->json(['status'=>'success']);
+
+////        $validator->validate();
+//        if($validator->fails()){
+//            $validator->errors()->add('msg','Vui long kiem tra lai du lieu');
+//            //return 'Validate that bai';
+//        }else{
+////            return 'Validate thanh cong';
+//            return redirect(route('product'))->with('msg','Validate thanh cong');
+//        }
+//
+//        return back()->withErrors($validator);
 
 
 

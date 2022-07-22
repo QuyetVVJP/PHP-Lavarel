@@ -42,6 +42,7 @@
 
         <script src="{{asset('assets/clients/js/bootstrap.min.js')}}" ></script>
         <script src="{{asset('assets/clients/js/custom.js')}}" ></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         @yield('js')
         @stack('scripts')
 </body>
