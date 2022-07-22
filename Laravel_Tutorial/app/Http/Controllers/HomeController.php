@@ -29,7 +29,7 @@ class HomeController extends Controller
 
     public function postAdd(ProductRequest $productRequest){
 
-        dd($productRequest);
+        dd($productRequest->all());
 
 //        $rules = [
 //            'product_name' =>'required|min:6',

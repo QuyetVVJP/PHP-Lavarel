@@ -12,6 +12,13 @@
 
 
 @section('content')
+
+    @if(session('msg'))
+        <div class="alert alert-{{session('type')}}" >
+            {{session('msg')}}
+        </div>
+    @endif
+
     <h1>Trang chu</h1>
 
     @env('production')

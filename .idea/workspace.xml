@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Validation 1&#10;- Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session&#10;- custom message validation">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Validation 2&#10;- FormRequest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/ProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/add.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +185,8 @@
       <workItem from="1658210256130" duration="21109000" />
       <workItem from="1658331655875" duration="331000" />
       <workItem from="1658394080150" duration="674000" />
-      <workItem from="1658402483118" duration="10319000" />
+      <workItem from="1658402483118" duration="10503000" />
+      <workItem from="1658475220161" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -311,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658414540608</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Validation 2&#10;- FormRequest">
+      <created>1658415352248</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658415352248</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,6 +357,7 @@
     <MESSAGE value="HTTP Response 2&#10;redirect()&#10;back()" />
     <MESSAGE value="HTTP Response 3&#10;Download file" />
     <MESSAGE value="Validation 1&#10;- Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session&#10;- custom message validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation 1&#10;- Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session&#10;- custom message validation" />
+    <MESSAGE value="Validation 2&#10;- FormRequest" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation 2&#10;- FormRequest" />
   </component>
 </project>

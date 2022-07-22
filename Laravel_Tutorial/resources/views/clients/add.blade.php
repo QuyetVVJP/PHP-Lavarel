@@ -10,15 +10,9 @@
 @section('content')
     <h1>Them san pham</h1>
     <form action="" method="post">
-
-        @if($errors->any())
-           <div class="alert alert-danger text-center">
-{{--               @foreach($errors->all() as $error)--}}
-{{--                   <p>{{$error}}</p>--}}
-{{--               @endforeach--}}
-               {{$errorMsg}}
-           </div>
-        @endif
+        @error('msg')
+            <div class="alert alert-danger text-center">{{$message}} </div>
+        @enderror
 
         <div class="mb-3">
             <label for="">Ten san pham</label>
