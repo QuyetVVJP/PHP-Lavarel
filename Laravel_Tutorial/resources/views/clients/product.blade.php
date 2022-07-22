@@ -11,7 +11,13 @@
 @endsection
 
 @section('content')
+    @if(session('msg'))
+        <div class="alert alert-success">{{session('msg')}}</div>
+    @endif
+
+
     <h1>SAN PHAM</h1>
+
     <x-package-alert/>
     @push('scripts')
         <script>

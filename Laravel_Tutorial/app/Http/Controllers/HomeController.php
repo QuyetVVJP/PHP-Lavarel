@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\View;
 use App\Http\Requests\ProductRequest;
+use Illuminate\Support\Facades\Validator;
 
 class HomeController extends Controller
 {
@@ -27,20 +28,37 @@ class HomeController extends Controller
         return view('clients.add', $this->data);
     }
 
-    public function postAdd(ProductRequest $productRequest){
+    public function postAdd(Request $request){
 
-        dd($productRequest->all());
+                $rules = [
+            'product_name' =>'required|min:6',
+            'product_price' => 'required|integer'
+        ];
 
-//        $rules = [
-//            'product_name' =>'required|min:6',
-//            'product_price' => 'required|integer'
-//        ];
-//        $message = [
-//            'product_name.required' => 'Tên sản phẩm bắt buộc phải nhập',
-//            'product_name.min' => 'Tên sản phẩm không được nhỏ hơn :min kí tụ',
-//            'product_price.required' => 'Giá sản phẩm bắt buộc phải nhập',
-//            'product_name.integer' => 'Giá sản phẩm phải là số tự nhiên',
-//        ];
+                $messages = [
+                    'product_name.required' => 'Trường :attribute bắt buộc phải nhập',
+                    'product_name.min' => 'Trường :attribute không được nhỏ hơn :min kí tụ',
+                    'product_price.required' => 'Trường :attribute bắt buộc phải nhập',
+                    'product_name.integer' => 'Trường :attribute phải là số tự nhiên',
+        ];
+
+                $attributes = [
+                    'product_name' => 'Tên sản phẩm',
+                    'product_price' => 'Giá sản phẩm'
+                ];
+        $validator = Validator::make($request->all(), $rules, $messages, $attributes);
+//        $validator->validate();
+        if($validator->fails()){
+            $validator->errors()->add('msg','Vui long kiem tra lai du lieu');
+            //return 'Validate that bai';
+        }else{
+//            return 'Validate thanh cong';
+            return redirect(route('product'))->with('msg','Validate thanh cong');
+        }
+
+        return back()->withErrors($validator);
+
+
 
 //        $message = [
 //            'required' => 'Trường :attribute bắt buộc phải nhập nhé',
