@@ -46,10 +46,12 @@ class Users extends Model
         // Lay 1 ban ghi dau tien cua table
         $detail = DB::table($this->table)->first();
 
+        DB::enableQueryLog();
         // Lay thong tin theo cot
         $listColumn = DB::table($this->table)
             ->select('email','username as hoten')
             ->where('id','>',2)
+//            ->orWhere('id',3)
             ->get();
 
         $listColumn2 = DB::table($this->table)
@@ -58,7 +60,26 @@ class Users extends Model
                 'id' => [6],
                 'username'=> 'さくらあきらかあ'
             ])
+//            ->toSql();
             ->get();
-        dd($listColumn2);
+
+//        dd($listColumn2);
+
+        DB::enableQueryLog();
+        $id = 6;
+        // cau lenh "select `username` as `hoten`, `email`, `id` from `users` where `id` = 18 and (`id` < 20 or `id` > 20)"
+        $listColumn3 = DB::table($this->table)
+            ->select('username as hoten','email','id')
+//            ->where('id','>',0)
+//                ->whereBetween('id',[1,2]) // truy van theo khoang
+//                ->whereNotBetween('id',[1,3])
+                ->whereIn('id',[1,3])
+            ->where('email','like','%hoang%')   // truy van theo keyword
+            ->where(function ($query) use ($id){
+                $query->where('id','<',$id)->orWhere('id','>',$id);
+            })
+            ->get();
+        dd($listColumn3);
+        dd(DB::getQueryLog());
     }
 }
