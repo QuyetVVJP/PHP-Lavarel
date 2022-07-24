@@ -16,9 +16,11 @@ class UserController extends Controller
 
     public function index(){
 
-        $statement = $this->users->statemenUser('SELECT * FROM users');
+        // $statement = $this->users->statemenUser('SELECT * FROM users');
 
         $title = 'Danh sách người dùng';
+
+        $data = $this->users->learnQueryBuilder();
         $usersList = $this->users->getAllUser();
 
         return view('clients.users.list', compact('title', 'usersList'));

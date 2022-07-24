@@ -38,4 +38,27 @@ class Users extends Model
     public function statemenUser($sql){
         return DB::statement($sql);
     }
+
+    public function learnQueryBuilder(){
+        // Lay tat ca ban ghi cua table
+        $list = DB::table($this->table)->get();
+
+        // Lay 1 ban ghi dau tien cua table
+        $detail = DB::table($this->table)->first();
+
+        // Lay thong tin theo cot
+        $listColumn = DB::table($this->table)
+            ->select('email','username as hoten')
+            ->where('id','>',2)
+            ->get();
+
+        $listColumn2 = DB::table($this->table)
+            ->select('email','username as hoten')
+            ->where([
+                'id' => [6],
+                'username'=> 'さくらあきらかあ'
+            ])
+            ->get();
+        dd($listColumn2);
+    }
 }
