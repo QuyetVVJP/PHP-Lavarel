@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Validation 5&#10;- create Rule Validation with Closure">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Validation 7&#10;Xu ly form request bang ajax">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/ProductRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -188,7 +185,8 @@
       <workItem from="1658331655875" duration="331000" />
       <workItem from="1658394080150" duration="674000" />
       <workItem from="1658402483118" duration="10503000" />
-      <workItem from="1658475220161" duration="11307000" />
+      <workItem from="1658475220161" duration="12715000" />
+      <workItem from="1658632726525" duration="3243000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -351,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658490288225</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Validation 7&#10;Xu ly form request bang ajax">
+      <created>1658493650978</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1658493650978</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +397,7 @@
     <MESSAGE value="Validation 4&#10;- Validator::make()" />
     <MESSAGE value="Validation 5&#10;- create Rule Validation" />
     <MESSAGE value="Validation 5&#10;- create Rule Validation with Closure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation 5&#10;- create Rule Validation with Closure" />
+    <MESSAGE value="Validation 7&#10;Xu ly form request bang ajax" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validation 7&#10;Xu ly form request bang ajax" />
   </component>
 </project>

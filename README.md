@@ -123,6 +123,9 @@ và view trong thư mục resources/views/components
 - create Rule Validation
 - Xu ly form request bang ajax
 
+## Database
+- Thiet lap cau hinh (theo cau hinh trong file .env database.php)
+- DB::select()
 # Project
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
 

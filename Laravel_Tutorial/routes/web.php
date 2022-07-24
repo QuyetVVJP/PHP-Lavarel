@@ -9,6 +9,7 @@ use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Home2Controller;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,6 +66,11 @@ Route::post('demo-response', function (Request $request){
 
 
 Route::get('download-image',[HomeController::class,'downloadImage'])->name('download-image');
+
+// Users
+Route::prefix('users')->group(function (){
+    Route::get('/', [UserController::class, 'index']);
+});
 
 
 
