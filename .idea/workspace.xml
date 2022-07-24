@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 1">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +185,7 @@
       <workItem from="1658394080150" duration="674000" />
       <workItem from="1658402483118" duration="10503000" />
       <workItem from="1658475220161" duration="12715000" />
-      <workItem from="1658632726525" duration="14644000" />
+      <workItem from="1658632726525" duration="16786000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -389,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658659207338</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull">
+      <created>1658661123801</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1658661123801</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -407,7 +415,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="6.Controller" />
     <MESSAGE value="7.Middleware" />
     <MESSAGE value="8.View&#10;file blade.php su dung template engie" />
     <MESSAGE value="9. HTTP Request" />
@@ -432,6 +439,7 @@
     <MESSAGE value="Database 3&#10;- update database" />
     <MESSAGE value="Database 4&#10;- DB::statement, delete" />
     <MESSAGE value="Query Builder 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 1" />
+    <MESSAGE value="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull" />
   </component>
 </project>
