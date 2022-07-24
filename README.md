@@ -127,6 +127,7 @@ và view trong thư mục resources/views/components
 - Thiet lap cau hinh (theo cau hinh trong file .env database.php)
 - DB::select()
 - DB::insert() data tu Post Request
+- DB::update()
 # Project
 [Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
 

@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-use DB;
+use Illuminate\Support\Facades\DB;
 
 
 class Users extends Model
@@ -20,5 +20,14 @@ class Users extends Model
 
     public function addUser($data){
         DB::insert('INSERT INTO users (username, email, create_at) values (?,?,?)', $data);
+    }
+
+    public function getDetail($id){
+        return DB::select('SELECT * FROM '.$this->table.' WHERE id = ?', [$id]);
+    }
+
+    public function updateUser($data, $id){
+        $data[] = $id;
+        return DB::update('UPDATE '.$this->table.' SET username=?, email=?, update_at=? WHERE id = ?',$data);
     }
 }
