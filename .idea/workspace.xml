@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Project &#10;- Phan trang">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Project &#10;- Them, sua du lieu">
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/users/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,7 @@
       <workItem from="1658402483118" duration="10503000" />
       <workItem from="1658475220161" duration="12715000" />
       <workItem from="1658632726525" duration="16985000" />
-      <workItem from="1658733779432" duration="14040000" />
+      <workItem from="1658733779432" duration="14196000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -462,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658757666419</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Project &#10;- Them, sua du lieu">
+      <created>1658758993178</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1658758993178</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" Blade Template Engine 6&#10; - Goi directive tu dinh nghia&#10; - Cache View: xoa bang lenh: php artisan view:clear" />
     <MESSAGE value="fix bug thieu gia tri cua bien $content" />
     <MESSAGE value="HTTP Response 1&#10;- response(), status code&#10;- Gan thong tin vao Header: content-type, cookie" />
     <MESSAGE value="HTTP Response 2&#10;redirect()&#10;back()" />
@@ -505,6 +508,7 @@
     <MESSAGE value="Project &#10;- Hien thi danh sach va loc du lieu" />
     <MESSAGE value="Project &#10;- sap xep du lieu theo cot" />
     <MESSAGE value="Project &#10;- Phan trang" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project &#10;- Phan trang" />
+    <MESSAGE value="Project &#10;- Them, sua du lieu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project &#10;- Them, sua du lieu" />
   </component>
 </project>
