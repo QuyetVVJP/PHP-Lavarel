@@ -129,6 +129,7 @@ và view trong thư mục resources/views/components
 - DB::insert() data tu Post Request
 - DB::update()
 - DB::statement, delete
+- groupBy, having, limit, offset
 
 ## Query Builder
 - and, or, like,between, notBetween, whereIn, whereNotIn, whereNull

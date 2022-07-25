@@ -97,11 +97,19 @@ class Users extends Model
 
         // Join bang
         $list =DB::table('users')
-            -> select('users.*','groups.name as group_name')
-            ->join('groups', 'users.group_id','=','groups.id')
+//            -> select('users.*','groups.name as group_name')
+//            ->join('groups', 'users.group_id','=','groups.id')
+//                ->orderBy('id','DESC')
+//            ->orderBy('create_at','desc')
+//                ->select(DB::raw('count(id) as email_count'), 'email','username')
+//            ->groupBy('email')
+//            ->groupBy('username')
+//            ->having('email_count','>=','2')
+                ->limit(2)
+            ->offset(2)
             ->get();
 
-//        dd($list);
+        dd($list);
         dd(DB::getQueryLog());
     }
 }
