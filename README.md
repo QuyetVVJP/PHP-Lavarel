@@ -131,6 +131,7 @@ và view trong thư mục resources/views/components
 - DB::statement, delete
 - groupBy, having, limit, offset
 - insert, update, delete data into table
+- DB Raw, select Raw, whereRaw, orderByRaw
 
 ## Query Builder
 - and, or, like,between, notBetween, whereIn, whereNotIn, whereNull

@@ -122,12 +122,12 @@ class Users extends Model
 
 //         $lastId = DB::getPdo()->lastInsertId();
 
-            $lastId = DB::table('users')->insertGetId([
-                           'username' => 'Nguyen van b',
-           'email' => 'nguyenvanb@gmail.com',
-           'group_id' => 1,
-           'create_at' => date('Y-m-d H:i:s')
-            ]);
+//            $lastId = DB::table('users')->insertGetId([
+//                           'username' => 'Nguyen van b',
+//           'email' => 'nguyenvanb@gmail.com',
+//           'group_id' => 1,
+//           'create_at' => date('Y-m-d H:i:s')
+//            ]);
 //
 //            $status = DB::table('users')
 //                ->where('id',10)
@@ -142,9 +142,25 @@ class Users extends Model
 //            ->delete();
 
         // Dem so ban ghi
-        $count = DB::table('users')->where('id', '>',2)->count();
+//        $count = DB::table('users')->where('id', '>',2)->count();
 
-        dd($count);
+        // DB Raw
+        $list = DB::table('users')
+            ->select(
+                DB::raw('`username` as hoten, `email`')
+            )
+//            ->groupBy('email')
+                ->where(DB::raw('id>20'))
+            ->get();
+
+
+        // select Raw
+        $list2 = DB::table('users')
+            ->selectRaw('username, email')
+            ->groupBy('email')
+            ->get();
+
+//        dd($count);
         dd(DB::getQueryLog());
     }
 }
