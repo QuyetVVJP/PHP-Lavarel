@@ -14,7 +14,7 @@ class Users extends Model
 
     protected $table = 'users';
 
-    public function getAllUser($filters = [], $keywords, $sortByArr = null)
+    public function getAllUser($filters = [], $keywords, $sortByArr = null, $perPage)
     {
 //        $users = DB::select('SELECT * FROM users ORDER BY create_at DESC;');
         $users = DB::table($this->table)
@@ -43,7 +43,11 @@ class Users extends Model
                     $query->orWhere('email','like','%'.$keywords.'%');
                 });
             }
-            $users = $users->get();
+            if(!empty($perPage)){
+                $users = $users->paginate($perPage)->withQueryString(); // $perPage ban ghi tren 1 trang
+            }else{
+                $users = $users->get();
+            }
         return $users;
     }
 
