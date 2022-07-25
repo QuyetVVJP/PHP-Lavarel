@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 5&#10;- insert, update, delete data into table">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 6&#10;- DB Raw, select Raw, whereRaw, orderByRaw, havingRaw">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Helpers/Functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Helpers/Functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/users/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/users/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +189,7 @@
       <workItem from="1658402483118" duration="10503000" />
       <workItem from="1658475220161" duration="12715000" />
       <workItem from="1658632726525" duration="16985000" />
-      <workItem from="1658733779432" duration="3334000" />
+      <workItem from="1658733779432" duration="7777000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -419,7 +422,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658736293408</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Query Builder 6&#10;- DB Raw, select Raw, whereRaw, orderByRaw, havingRaw">
+      <created>1658737731811</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1658737731811</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,7 +447,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="9. Blade Template Engine 1,2" />
     <MESSAGE value="9. Blade Template Engine 3&#10;@section @yield" />
     <MESSAGE value=" Blade Template Engine 4&#10; master layout" />
     <MESSAGE value=" Blade Template Engine 5&#10; @csrf @method('PUT')&#10; @stack, @push, @prepend" />
@@ -462,6 +471,7 @@
     <MESSAGE value="Query Builder 3&#10;- Truy van Date, truy van gia tri cot, join table, leftJoin" />
     <MESSAGE value="Query Builder 4&#10;- groupBy, having, limit, offset" />
     <MESSAGE value="Query Builder 5&#10;- insert, update, delete data into table" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 5&#10;- insert, update, delete data into table" />
+    <MESSAGE value="Query Builder 6&#10;- DB Raw, select Raw, whereRaw, orderByRaw, havingRaw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 6&#10;- DB Raw, select Raw, whereRaw, orderByRaw, havingRaw" />
   </component>
 </project>

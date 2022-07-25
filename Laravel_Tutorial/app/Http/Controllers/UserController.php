@@ -14,14 +14,37 @@ class UserController extends Controller
         $this->users = new Users();
     }
 
-    public function index(){
+    public function index(Request $request){
 
         // $statement = $this->users->statemenUser('SELECT * FROM users');
 
         $title = 'Danh sách người dùng';
 
-        $data = $this->users->learnQueryBuilder();
-        $usersList = $this->users->getAllUser();
+//        $data = $this->users->learnQueryBuilder();
+        $filters = [];
+        $keywords = null;
+        if (!empty($request->status)){
+          $status = $request->status;
+          if ($status == 'active'){
+              $status = 1;
+          }else{
+              $status = 0;
+          }
+
+          $filters[] = ['users.status','=',$status];
+        };
+        if (!empty($request->group_id)){
+            $group_id = $request->group_id;
+
+            $filters[] = ['users.group_id','=',$group_id];
+        };
+
+        if (!empty($request->keywords)){
+            $keywords = $request->keywords;
+
+        };
+
+        $usersList = $this->users->getAllUser($filters, $keywords);
 
         return view('clients.users.list', compact('title', 'usersList'));
     }
