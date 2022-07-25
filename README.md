@@ -138,27 +138,18 @@ và view trong thư mục resources/views/components
 - Truy van Date, truy van gia tri cot, join table
 
 ## Mini Project
-- Hien thi danh sach va loc du lieu
-- Sap xep
-- Phan trang
-- Them du lieu moi
-- Sua du lieu
-- Xóa dữ liệu
-# Project
-[Link tham khảo] (https://www.youtube.com/watch?v=SgKJAXEW4sA&list=PLWTu87GngvNw0qfHSmDU_Y2BIW_AJXjby&index=1)
-
-
 Chức năng
 - Danh sách
 - CRUD
 - Tìm kiếm
 - Phân trang
 - sắp xếp
+## Deploy
+[Link tham khảo] (https://www.youtube.com/watch?v=x2MbZKamYaM)
+
+## Mở rộng
 - Login, logout
 - Authen, Author
 - Cronjob send report by Email
-- DB: User - Role
 - Da ngon ngu
 
-# Deploy
-[Link tham khảo] (https://www.youtube.com/watch?v=x2MbZKamYaM)
