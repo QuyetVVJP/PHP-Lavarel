@@ -130,6 +130,7 @@ và view trong thư mục resources/views/components
 - DB::update()
 - DB::statement, delete
 - groupBy, having, limit, offset
+- insert, update, delete data into table
 
 ## Query Builder
 - and, or, like,between, notBetween, whereIn, whereNotIn, whereNull

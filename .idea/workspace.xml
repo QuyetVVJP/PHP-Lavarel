@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 3&#10;- Truy van Date, truy van gia tri cot, join table, leftJoin">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Query Builder 4&#10;- groupBy, having, limit, offset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +186,7 @@
       <workItem from="1658402483118" duration="10503000" />
       <workItem from="1658475220161" duration="12715000" />
       <workItem from="1658632726525" duration="16985000" />
-      <workItem from="1658733779432" duration="1340000" />
+      <workItem from="1658733779432" duration="2314000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -404,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658665350167</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Query Builder 4&#10;- groupBy, having, limit, offset">
+      <created>1658735358397</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1658735358397</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +430,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="8.View&#10;file blade.php su dung template engie" />
     <MESSAGE value="9. HTTP Request" />
     <MESSAGE value="9. Blade Template Engine 1,2" />
     <MESSAGE value="9. Blade Template Engine 3&#10;@section @yield" />
@@ -447,6 +454,7 @@
     <MESSAGE value="Query Builder 1" />
     <MESSAGE value="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull" />
     <MESSAGE value="Query Builder 3&#10;- Truy van Date, truy van gia tri cot, join table, leftJoin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 3&#10;- Truy van Date, truy van gia tri cot, join table, leftJoin" />
+    <MESSAGE value="Query Builder 4&#10;- groupBy, having, limit, offset" />
+    <option name="LAST_COMMIT_MESSAGE" value="Query Builder 4&#10;- groupBy, having, limit, offset" />
   </component>
 </project>
