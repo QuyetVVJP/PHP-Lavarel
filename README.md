@@ -1,7 +1,7 @@
 # Học PHP cơ bản
 [Link tham khảo](https://www.youtube.com/watch?v=Pyz5ol_H-zw&list=PLq3KxntIWWrLpDmH_9YxuaF_yHA5QKHlN)
 * Biến, kiểu dữ liệu, phạm vi sử dụng biến (biến toàn cục, cục bộ, static)
-* Toán tử trong PHP
+* Toán tử trong PHP 
 * Chuỗi: Dấu "" các biến bên trong "" sẽ được parse
 * Mảng: Tuần tự, không tuần tự, đa chiều
 * If else, switch case
@@ -146,6 +146,12 @@ Chức năng
 - sắp xếp
 ## Deploy
 [Link tham khảo] (https://www.youtube.com/watch?v=x2MbZKamYaM)
+
+- Launch EC2 on AWS, connect by ssh
+- Install Apache on Server
+- Install MySQL Server
+- Install php 8.x
+- Upload project on EC2 by filezilla
 
 ## Mở rộng
 - Login, logout

@@ -20,6 +20,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
 
+
         // $statement = $this->users->statemenUser('SELECT * FROM users');
 
         $title = 'Danh sách người dùng';

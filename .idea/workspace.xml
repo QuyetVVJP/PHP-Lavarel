@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Project &#10;- Them, sua du lieu">
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Users.php" afterDir="false" />
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="update README.md">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +186,11 @@
       <workItem from="1658402483118" duration="10503000" />
       <workItem from="1658475220161" duration="12715000" />
       <workItem from="1658632726525" duration="16985000" />
-      <workItem from="1658733779432" duration="14196000" />
+      <workItem from="1658733779432" duration="14490000" />
+      <workItem from="1658759915225" duration="1281000" />
+      <workItem from="1658819484071" duration="490000" />
+      <workItem from="1658820569023" duration="2452000" />
+      <workItem from="1658839488073" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -466,7 +472,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658758993178</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Project &#10;- Xóa dữ liệu">
+      <created>1658759331935</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1658759331935</updated>
+    </task>
+    <task id="LOCAL-00042" summary="update README.md">
+      <created>1658759993930</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1658759993930</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,8 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix bug thieu gia tri cua bien $content" />
-    <MESSAGE value="HTTP Response 1&#10;- response(), status code&#10;- Gan thong tin vao Header: content-type, cookie" />
     <MESSAGE value="HTTP Response 2&#10;redirect()&#10;back()" />
     <MESSAGE value="HTTP Response 3&#10;Download file" />
     <MESSAGE value="Validation 1&#10;- Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session&#10;- custom message validation" />
@@ -509,6 +527,8 @@
     <MESSAGE value="Project &#10;- sap xep du lieu theo cot" />
     <MESSAGE value="Project &#10;- Phan trang" />
     <MESSAGE value="Project &#10;- Them, sua du lieu" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project &#10;- Them, sua du lieu" />
+    <MESSAGE value="Project &#10;- Xóa dữ liệu" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>

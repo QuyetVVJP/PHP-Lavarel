@@ -17,7 +17,7 @@ class CategoriesController extends Controller
 //        }
         $allData = $request->all();
         echo $allData['id'];
-        dd($allData);
+//        dd($allData);
         return view('/clients/categories/list');
     }
 
@@ -73,7 +73,7 @@ class CategoriesController extends Controller
               $file = $request->file('photo');
 //              dd($file);
               $path = $file->store('images'); // luu o local storage/app/images
-              dd($path);
+             // dd($path);
 
           }else{
               return 'Upload ko thanh cong';
