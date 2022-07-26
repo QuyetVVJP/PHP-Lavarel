@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="update README.md">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="xoa dd()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,8 @@
       <workItem from="1658759915225" duration="1281000" />
       <workItem from="1658819484071" duration="490000" />
       <workItem from="1658820569023" duration="2452000" />
-      <workItem from="1658839488073" duration="818000" />
+      <workItem from="1658839488073" duration="1637000" />
+      <workItem from="1658847140442" duration="1306000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -486,7 +486,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658759993930</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="xoa dd()">
+      <created>1658840590305</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1658840590305</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +511,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HTTP Response 2&#10;redirect()&#10;back()" />
     <MESSAGE value="HTTP Response 3&#10;Download file" />
     <MESSAGE value="Validation 1&#10;- Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session&#10;- custom message validation" />
     <MESSAGE value="Validation 2&#10;- FormRequest" />
@@ -529,6 +535,7 @@
     <MESSAGE value="Project &#10;- Them, sua du lieu" />
     <MESSAGE value="Project &#10;- Xóa dữ liệu" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="xoa dd()" />
+    <option name="LAST_COMMIT_MESSAGE" value="xoa dd()" />
   </component>
 </project>
