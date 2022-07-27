@@ -10,7 +10,7 @@
 
     <h1>{{$title}}</h1>
 
-    <a href="{{route('users.add')}}" class="btn btn-primary">Thêm người dùng </a>
+    <a href="{{route('add')}}" class="btn btn-primary">Thêm người dùng </a>
     <hr>
     <form action="" method="get" class="mb-3">
         <div class="row">
@@ -64,9 +64,9 @@
                     <td>{{$item->group_name}}</td>
                     <td>{!!$item->status==0? '<button class="btn btn-danger btn-sm">Chưa kích hoạt</button>':'<button class="btn btn-success btn-sm">Đã kích hoạt</button>'!!}</td>
                     <td>{{$item->create_at}}</td>
-                    <td><a href="{{route('users.edit',['id'=>$item->id])}}" class="btn btn-warning btn-sm"> Sửa</a> </td>
+                    <td><a href="{{route('edit',['id'=>$item->id])}}" class="btn btn-warning btn-sm"> Sửa</a> </td>
                     <td>
-                        <a onclick="return confirm('Bạn có chắc chắn muốn xóa?')" href="{{route('users.delete',['id'=>$item->id])}}" class="btn btn-danger btn-sm"> Xóa</a>
+                        <a onclick="return confirm('Bạn có chắc chắn muốn xóa?')" href="{{route('delete',['id'=>$item->id])}}" class="btn btn-danger btn-sm"> Xóa</a>
                     </td>
 
                 </tr>

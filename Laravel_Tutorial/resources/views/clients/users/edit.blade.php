@@ -13,7 +13,7 @@
     @endif
 
     <h1>{{$title}}</h1>
-    <form action="{{route('users.postEdit')}}" method="post">
+    <form action="{{route('postEdit')}}" method="post">
         <div class="mb-3">
             <label for="">Họ và tên</label>
             <input type="text" class="form-control" name="fullname" placeholder="Họ và tên..."
@@ -58,7 +58,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Cập nhật</button>
-        <a href="{{route('users.index')}}" class="btn btn-warning">Quay lại</a>
+        <a href="{{route('home')}}" class="btn btn-warning">Quay lại</a>
         @csrf
     </form>
 @endsection

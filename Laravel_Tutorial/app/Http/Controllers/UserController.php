@@ -94,7 +94,7 @@ class UserController extends Controller
             'create_at' =>date('Y-m-d H:i:s')
         ];
         $this->users->addUser($dataInsert);
-        return redirect()->route('users.index')->with('msg', 'Thêm người dùng thành công');
+        return redirect()->route('home')->with('msg', 'Thêm người dùng thành công');
     }
 
     public function getEdit(Request $request, $id = 0)
@@ -106,10 +106,10 @@ class UserController extends Controller
                 $request->session()->put('id', $id);
                 $userDetail = $userDetail[0];
             } else {
-                return redirect()->route('users.index')->with('msg', 'Người dùng không tồn tại');
+                return redirect()->route('home')->with('msg', 'Người dùng không tồn tại');
             }
         } else {
-            return redirect()->route('users.index')->with('msg', 'Liên kết không tồn tại');
+            return redirect()->route('home')->with('msg', 'Liên kết không tồn tại');
         }
         $allGroups = getAllGroups();
         return view('clients.users.edit', compact('title', 'userDetail','allGroups'));
@@ -155,7 +155,7 @@ class UserController extends Controller
             $msg = 'Liên kết không tồn tại';
         }
 
-        return redirect()->route('users.index')->with('msg', $msg);
+        return redirect()->route('home')->with('msg', $msg);
 
     }
 }
