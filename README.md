@@ -1,13 +1,21 @@
 # Học PHP cơ bản
 [Link tham khảo](https://www.youtube.com/watch?v=Pyz5ol_H-zw&list=PLq3KxntIWWrLpDmH_9YxuaF_yHA5QKHlN)
 * Biến, kiểu dữ liệu, phạm vi sử dụng biến (biến toàn cục, cục bộ, static)
-* Toán tử trong PHP 
+* Toán tử: + - * % > < != == === && || ...
 * Chuỗi: Dấu "" các biến bên trong "" sẽ được parse
 * Mảng: Tuần tự, không tuần tự, đa chiều
 * If else, switch case
 * Function: giá trị trả về, include, require
 * Vòng lặp: for, foreach, while, do while
-* POST, GET
+* POST và GET là 2 phương thức của giao thức HTTP, đều là gửi dữ liệu về server xử lí sau khi người dùng nhập thông tin vào form và thực hiện submit
+* Phương thức POST bảo mật hơn GET vì dữ liệu được gửi ngầm bằng mắt thường không thể nhìn thấy được.
+
+* Phương thức GET dữ liệu được gửi tường minh, chúng ta có thể thấy trên URL nên nó không bảo mật.
+
+* Phương thức GET luôn luôn nhanh hơn POST vì dữ liệu gửi đi được 
+Browser giữ lại trong cache. 
+Khi thực thi với POST thì Server luôn thực thi lệnh rồi trả về cho Client, 
+còn với GET thì Browser sẽ kiểm tra trong cache có chưa, nếu có thì trả về ngay chứ không cần gửi lên Server.
 * Upload File
 # PHP Lavarel
 [Link tham khảo] (https://www.youtube.com/watch?v=sMXkSWFlV28&list=PL8y3hWbcppt2nWBglaxrQm_A5sRjstdnK)
@@ -16,8 +24,8 @@
 ```bash
 ─Laravel_Tutorial
 ├───app  // Chứa tất cả các Class của project
-│   ├───Console  // Câu lệnh chạy ở command line
-│   ├───Exceptions // Xử lý ngoại lê, điều hướng lỗi
+│   ├───Console  
+│   ├───Exceptions 
 │   ├───Http 
 │   │   ├───Controllers  // Chứa phần Controller, C trong MVC
 │   │   └───Middleware   // Bộ lọc request, Authen, Author
@@ -27,19 +35,19 @@
 │   └───cache  
 ├───config    // chứa tất cả cá file config
 ├───database  
-│   ├───factories  // Thư mực chứa các file định nghĩa các cột bảng dữ liệu để tạo ra các dữ liệu mẫu
-│   ├───migrations  // thư mục chứa các file tạo và chỉnh sửa dữ liệu
-│   └───seeders  // Thư mục chứa các file tạo dữ mẫu
-├───lang  // Ngôn ngữ
+│   ├───factories 
+│   ├───migrations  
+│   └───seeders 
+├───lang  
 │   └───en
 ├───public // Thư mục chứa file index.php giống như cổng cho tất cả các request vào project, bên trong thư mục còn chứa file JavaScript, và CSS
 ├───resources // Thư mục chứa những file view và raw, các file biên soạn như LESS, SASS, hoặc JavaScript
 │   ├───css
 │   ├───js
 │   └───views  V trong MVC, chứa file View xuất giao diện người dùng
-├───routes //Thư mục chứa tất cả các điều khiển route (đường dẫn) trong project. Chứa các file route sẵn có: web.php, channels.php, api.php, và console.php
-│   ├───api.php // cấu hình các route liên quan đến API
-│   ├───web.php // Các cấu hình route liên quan đến web (có giao diện người dùng)
+├───routes // chứa tất cả các điều khiển route (đường dẫn) trong project
+│   ├───api.php 
+│   ├───web.php 
 ├───storage // Thư mục chứa các file biên soạn blade templates của bạn, file based sessions, file caches, và những file sinh ra từ project.
 │   ├───app // Dùng để chứ file sinh ra từ project
 │   │   └───public  // Lưu những file người dùng tạo ra như hình ảnh
@@ -49,8 +57,8 @@
 │   │   ├───sessions
 │   │   ├───testing
 │   │   └───views
-│   └───logs  // chứ logs
-├───tests  // Chứa file tests
+│   └───logs  // chứa logs
+├───tests  
 │   ├───Feature
 │   └───Unit
 └───vendor  // chứa các thư mục, file thư viện của Composer
@@ -64,31 +72,25 @@
 ```
 
 ![Request Lifecycle Laravel](https://images.viblo.asia/b4bce647-722e-4064-ac19-b7e9e0d0573e.png)
-index.php -> bootstarp/app.php 
--> app/http/kernel.php (đăng ký và khởi động service provider)
--> app/Providers/...ServiceProvider
--> routes/web.php 
--> app/http/Middleware/... (xử lý logic theo ràng buộc mà coder đặt ra)
--> app/http/Controller 
--> View 
--> trả về response cho Client
+index.php 
+- -> bootstarp/app.php 
+- -> app/http/kernel.php (đăng ký và khởi động service provider)
+- -> app/Providers/...ServiceProvider
+- -> routes/web.php 
+- -> app/http/Middleware/... (xử lý logic theo ràng buộc mà coder đặt ra)
+- -> app/http/Controller 
+- -> View 
+- -> trả về response cho Client
 
-## Controler
-## Middleware
-## View
-
-## Route
-
-get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware
-
-## HTTP Request
+### Controler
+### Middleware
+### View
+### Route
+### HTTP Request
 
 khai báo  public function index(Request $request) để lấy thông tin của request hiện tại
 
-Phương thức của request:
-- all() : lay toan bo du lieu
-- path)(): lay gia tri duong dan tru ten mien
-- is(), url(), fullUrl(), isMethod(), ip(), server(), header(), input(), name
+Phương thức của request: all(),path(), is(), url(), fullUrl(), isMethod(), ip(), server(), header(), input(), name
 - Upload file
 
 ## Blade template laravel
@@ -96,35 +98,25 @@ Phương thức của request:
 - {{$variable}} : hiển thị dữ liệu dạng thực thể
 - {!! $variable} : hiển thị dữ liệu có biên dịch mã HTML
 - for, while, foreach, forelse, if, ifelse, switch case
-- include View
-- @section, @yield
-- @show, @parent
-- master layout
-- @csrf, @method('PUT)
-- @stack: thay the, @push: them moi (phia duoi), @prepend: them moi (len tren)
-- Directive tu dinh nghia, 
+- include View 
+- @section, @yield @show, @parent master layout @csrf, @method('PUT) @stack @push @prepend
+- Directive
 - Cache View: mặc định cache vào folder storage/framework/views
 - Component: php artisan make:component Alert -> hệ thống sẽ tạo ra class trong thư mục app\View\Components 
 và view trong thư mục resources/views/components
 
 ## HTTP Response
-- response(), status code, gan thong tin vao Header: Content-type, cookie
+- response(), status code, gán thông tin vào Header: Content-type, cookie
 - redirect(), back()
 - Download file, img
 
 ## Validation
 - Nếu validate không thành công thì Laravel sẽ tự động redirect về request trước kèm thông báo được gán vào Flash session
-- custom message validation
-- FormRequest()
-- prepareForValidation()
-- withValidation()
-- AuthorizationException()
-- Validator::make()
-- create Rule Validation
+- custom message validation FormRequest() prepareForValidation() withValidation()  AuthorizationException() Validator::make()  create Rule Validation
 - Xu ly form request bang ajax
 
 ## Database
-- Thiet lap cau hinh (theo cau hinh trong file .env database.php)
+- Thiết lập cấu hình (theo cau hinh trong file .env database.php)
 - DB::select()
 - DB::insert() data tu Post Request
 - DB::update()
@@ -145,17 +137,17 @@ Chức năng
 - Phân trang
 - sắp xếp
 ## Deploy
-[Link tham khảo] (https://www.youtube.com/watch?v=x2MbZKamYaM)
+[Link tham khảo] (https://aws.plainenglish.io/how-to-deploy-a-laravel-project-into-a-aws-ec2-instance-ae067b70e4e2)
 
 - Launch EC2 on AWS, connect by ssh
 - Install Apache on Server
 - Install MySQL Server
-- Install php 8.x
-- Upload project on EC2 by filezilla
+- Install php 8.x 
+- Upload project on EC2 by filezilla, git
 
 ## Mở rộng
 - Login, logout
 - Authen, Author
 - Cronjob send report by Email
-- Da ngon ngu
+- i18
 
