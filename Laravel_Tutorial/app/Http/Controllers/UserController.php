@@ -85,7 +85,6 @@ class UserController extends Controller
     public function postAdd(UserRequest $request)
     {
 
-
         $dataInsert = [
             'username' => $request->fullname,
             'email' => $request->email,

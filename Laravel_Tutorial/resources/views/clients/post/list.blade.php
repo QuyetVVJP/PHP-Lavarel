@@ -14,8 +14,8 @@
             <th>Tiêu đề</th>
             <th>Tác giả</th>
             <th>Thể loại</th>
-            <th style="width: 15%">Thời gian</th>
-            <th style="width: 5%">Đọc</th>
+            <th style="width: 15%">Ngày viết</th>
+            <th style="width: 5%"></th>
 
         </tr>
         </thead>
@@ -26,7 +26,7 @@
                     <td>{{$key+1}}</td>
                     <td>{{$item->title}}</td>
                     <td>{{$item->author}}</td>
-                    <td>{{$item->category}}</td>
+                    <td>{{$item->group_name}}</td>
                     <td>{{$item->create_at}}</td>
                     <td><a href="{{route('edit',['id'=>$item->id])}}" class="btn btn-warning btn-sm"> Đọc</a> </td>
                 </tr>

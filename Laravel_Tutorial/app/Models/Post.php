@@ -13,8 +13,14 @@ class Post extends Model
 
     public function getAllPost(){
         $posts = DB::table($this->table)
-            ->select('post.*')
+            ->select('post.*', 'groups.name as group_name')
+            ->join('groups', 'post.group_id', '=','groups.id')
             ->get();
         return $posts;
+    }
+
+    public function addPost($data)
+    {
+        return DB::table($this->table)->insert($data);
     }
 }

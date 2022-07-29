@@ -78,8 +78,10 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
     Route::get('/delete/{id}', [UserController::class,'delete'])->name('delete');
 //});
 
-Route::prefix('post')->name('post')->group(function (){
-    Route::get('/',[PostController::class, 'index'])->name('listPost');
+Route::prefix('post')->group(function (){
+    Route::get('/',[PostController::class, 'index'])->name('posts');
+    Route::get('/add', [PostController::class,'add'])->name('add');
+    Route::post('/add', [PostController::class,'postAdd'])->name('postAdd');
 });
 
 
