@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Home2Controller;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -76,6 +77,10 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
     Route::post('/update',[UserController::class,'postEdit'])->name('postEdit');
     Route::get('/delete/{id}', [UserController::class,'delete'])->name('delete');
 //});
+
+Route::prefix('post')->name('post')->group(function (){
+    Route::get('/',[PostController::class, 'index'])->name('listPost');
+});
 
 
 

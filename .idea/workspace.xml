@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="update">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="update README.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +196,9 @@
       <workItem from="1658851782056" duration="121000" />
       <workItem from="1658903733668" duration="1766000" />
       <workItem from="1658906457768" duration="41000" />
-      <workItem from="1658937436210" duration="888000" />
+      <workItem from="1658937436210" duration="976000" />
+      <workItem from="1658991798038" duration="596000" />
+      <workItem from="1659076787550" duration="2605000" />
     </task>
     <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
       <created>1658062693931</created>
@@ -526,7 +529,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658905236992</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="update README.md">
+      <created>1658938347758</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1658938347758</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -563,12 +573,12 @@
     <MESSAGE value="Project &#10;- Phan trang" />
     <MESSAGE value="Project &#10;- Them, sua du lieu" />
     <MESSAGE value="Project &#10;- Xóa dữ liệu" />
-    <MESSAGE value="update README.md" />
     <MESSAGE value="xoa dd()" />
     <MESSAGE value="update .gitignore" />
     <MESSAGE value="update .gitignore them file .env" />
     <MESSAGE value="sua route" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
   </component>
 </project>
