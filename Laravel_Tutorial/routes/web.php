@@ -80,6 +80,7 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
 
 Route::prefix('post')->group(function (){
     Route::get('/',[PostController::class, 'index'])->name('posts');
+    Route::get('/detail/{id}', [PostController::class,'getPost'])->name('detail');
     Route::get('/add', [PostController::class,'add'])->name('add');
     Route::post('/add', [PostController::class,'postAdd'])->name('postAdd');
 });

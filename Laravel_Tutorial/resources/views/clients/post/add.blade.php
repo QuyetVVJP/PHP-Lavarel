@@ -32,7 +32,7 @@
 
         <div class="mb-3">
             <label for="">Nội dung</label>
-            <textarea type="text" class="form-control" name="contents" placeholder="Nội dung..." value="{{old('contents')}}">
+            <textarea type="text" class="form-control" id="contents" name="contents" placeholder="Nội dung..." value="{{old('contents')}}">
                 </textarea>
             @error('contents')
             <span style="color: red">{{$message}}</span>
@@ -59,6 +59,8 @@
         @csrf
     </form>
 @endsection
+
+
 
 
 

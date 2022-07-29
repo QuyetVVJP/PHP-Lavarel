@@ -33,12 +33,31 @@ class PostController extends Controller
         $dataInsert = [
             'title' => $request->title,
             'author' => $request->author,
-            'content' => $request->contents,
+            'contents' => $request->contents,
             'group_id' => $request->group_id,
             'create_at' =>date('Y-m-d H:i:s')
         ];
 
         $this->post->addPost($dataInsert);
         return redirect()->route('posts')->with('msg', 'Thêm bài viết thành công');
+    }
+
+    public function getPost(Request $request, $id = 0)
+    {
+        $title = '';
+        if (!empty($id)) {
+            $postDetail = $this->post->getDetail($id);
+            if (!empty($postDetail[0])) {
+                $request->session()->put('id', $id);
+                $postDetail = $postDetail[0];
+                $title = $postDetail->title;
+            } else {
+                return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+            }
+        } else {
+            return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+        }
+
+        return view('clients.post.detail', compact('title', 'postDetail'));
     }
 }

@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="{{asset('assets/clients/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/clients/css/style.css')}}">
-
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.2.0/classic/ckeditor.js"></script>
     @yield('css')
+    @yield('scripts')
 
 </head>
 <body>
@@ -43,7 +44,18 @@
         <script src="{{asset('assets/clients/js/bootstrap.min.js')}}" ></script>
         <script src="{{asset('assets/clients/js/custom.js')}}" ></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#contents' ) )
+            .then( editor => {
+                console.log( editor );
+            } )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
         @yield('js')
         @stack('scripts')
 </body>
 </html>
+

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Hien thi danh sach bai viet">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Create Post">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/PostRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,14 +203,7 @@
       <workItem from="1658906457768" duration="41000" />
       <workItem from="1658937436210" duration="976000" />
       <workItem from="1658991798038" duration="596000" />
-      <workItem from="1659076787550" duration="7400000" />
-    </task>
-    <task id="LOCAL-00001" summary="2. Directory Structure - Request LifeCycle">
-      <created>1658062693931</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1658062693931</updated>
+      <workItem from="1659076787550" duration="11230000" />
     </task>
     <task id="LOCAL-00002" summary="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down">
       <created>1658066493001</created>
@@ -546,7 +541,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659079605018</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Create Post">
+      <created>1659084432675</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1659084432675</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +566,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Validation 5&#10;- create Rule Validation" />
     <MESSAGE value="Validation 5&#10;- create Rule Validation with Closure" />
     <MESSAGE value="Validation 7&#10;Xu ly form request bang ajax" />
     <MESSAGE value="Database 1&#10;- Thiet lap cau hinh &#10;- DB:select" />
@@ -589,6 +590,7 @@
     <MESSAGE value="update" />
     <MESSAGE value="update README.md" />
     <MESSAGE value="Hien thi danh sach bai viet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hien thi danh sach bai viet" />
+    <MESSAGE value="Create Post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Post" />
   </component>
 </project>

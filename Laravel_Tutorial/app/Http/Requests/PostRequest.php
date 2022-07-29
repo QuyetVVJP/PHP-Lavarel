@@ -26,7 +26,7 @@ class PostRequest extends FormRequest
         return [
             'title' =>'required',
             'author' =>'required',
-            'content' => 'required',
+            'contents' => 'required',
             'group_id' => ['required','integer', function($attribute,$value, $fail){
                 if($value == 0){
                     $fail('Bắt buộc phải chọn nhóm');
@@ -41,7 +41,7 @@ class PostRequest extends FormRequest
             'title.required' => 'Tiêu đề bắt buộc phải nhập',
 
             'author.required' => 'Tác giả bắt buộc phải nhập',
-            'content.required' => 'Nội dung bắt buộc phải nhập',
+            'contents.required' => 'Nội dung bắt buộc phải nhập',
             'group_id.required' => 'Thể loại không được để trống',
             'group_id.integer' => 'Nhóm không hợp lệ',
             ];
