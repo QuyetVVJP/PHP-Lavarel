@@ -7,6 +7,29 @@
     @if(session('msg'))
         <div class="alert alert-success">{{session('msg')}}</div>
     @endif
+    <form action="">
+        <div class="row">
+            <div class="col-3">
+                <select class="form-control" name="group_id">
+                    <option value="0">Thể loại</option>
+                    @if(!(empty(getAllGroups())))
+                        @foreach(getAllGroups() as $item)
+                            <option value="{{$item->id}}" {{request()->group_id==$item->id ? 'selected':false}} >{{$item->name}}</option>
+                        @endforeach
+                    @endif
+                </select>
+            </div>
+
+            <div class="col-3">
+                <input type="search" name="keywords" class="form-control"
+                       value="{{request()->keywords}}"  placeholder="Từ khóa...">
+            </div>
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+            </div>
+        </div>
+    </form>
+    <br>
     <table class="table table-bordered">
         <thead>
         <tr>

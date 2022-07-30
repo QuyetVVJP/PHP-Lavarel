@@ -11,12 +11,39 @@ class Post extends Model
     use HasFactory;
     protected $table = 'post';
 
-    public function getAllPost(){
+    public function getAllPost($filters = [], $keywords, $sortByArr = null, $perPage){
         $posts = DB::table($this->table)
             ->select('post.*', 'groups.name as group_name')
-            ->join('groups', 'post.group_id', '=','groups.id')
-            ->orderBy('create_at','desc')
-            ->get();
+            ->join('groups', 'post.group_id', '=','groups.id');
+
+
+        $orderBy = 'post.create_at';
+        $orderType = 'DESC';
+
+        if(!empty($sortByArr) && is_array($sortByArr)){
+            if(!empty($sortByArr['sortBy'] && $sortByArr['sortType'])){
+                $orderBy = trim($sortByArr['sortBy']);
+                $orderType = trim($sortByArr['sortType']);
+            }
+        }
+
+        if(!empty($filters)){
+            $posts = $posts->where($filters);
+        }
+
+        $posts = $posts->orderBy($orderBy, $orderType);
+
+        if (!empty($keywords)){
+            $posts = $posts->where(function ($query) use ($keywords){
+                $query->orWhere('title','like','%'.$keywords.'%');
+                $query->orWhere('author','like','%'.$keywords.'%');
+            });
+        }
+        if(!empty($perPage)){
+            $posts =$posts->paginate($perPage)->withQueryString(); // $perPage ban ghi tren 1 trang
+        }else{
+            $posts = $posts->get();
+        }
         return $posts;
     }
 

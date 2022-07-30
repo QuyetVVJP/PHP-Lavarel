@@ -10,13 +10,49 @@ use App\Models\Post;
 class PostController extends Controller
 {
     private $post;
+    const _PER_PAGE = 5;
     public function __construct()
     {
         $this->post = new Post();
     }
 
     public function index(Request $request){
-        $listPost = $this->post->getAllPost();
+
+        $filters = [];
+        $keywords = null;
+        if (!empty($request->group_id)) {
+            $group_id = $request->group_id;
+
+            $filters[] = ['post.group_id', '=', $group_id];
+        };
+
+        if (!empty($request->keywords)) {
+            $keywords = $request->keywords;
+
+        };
+
+        // Xu ly logic sap xep
+        $sortBy = $request->input('sort-by');
+        $sortType = $request->input('sort-type');
+
+        $allowSort = ['asc', 'desc'];
+        if (!empty($sortType) && in_array($sortType, $allowSort)) {
+            if ($sortType == 'desc') {
+                $sortType = 'asc';
+            } else {
+                $sortType = 'desc';
+            }
+        } else {
+            $sortType = 'asc';
+        }
+
+        $sortArray = [
+            'sortBy' => $sortBy,
+            'sortType' => $sortType
+        ];
+
+
+        $listPost = $this->post->getAllPost( $filters, $keywords, $sortArray, self::_PER_PAGE);
 
         return view('clients.post.list',
             compact( 'listPost'));

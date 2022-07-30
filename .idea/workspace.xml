@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Update Post">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Delete Post">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,14 +202,7 @@
       <workItem from="1658937436210" duration="976000" />
       <workItem from="1658991798038" duration="596000" />
       <workItem from="1659076787550" duration="16549000" />
-      <workItem from="1659178852964" duration="4042000" />
-    </task>
-    <task id="LOCAL-00004" summary="6.Controller">
-      <created>1658126845167</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1658126845167</updated>
+      <workItem from="1659178852964" duration="6419000" />
     </task>
     <task id="LOCAL-00005" summary="7.Middleware">
       <created>1658141750388</created>
@@ -548,7 +540,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659182612773</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="Delete Post">
+      <created>1659183148500</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1659183148500</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +565,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Database 1&#10;- Thiet lap cau hinh &#10;- DB:select" />
     <MESSAGE value="Database 2&#10;- insert data tu Post Request" />
     <MESSAGE value="Database 3&#10;- update database" />
     <MESSAGE value="Database 4&#10;- DB::statement, delete" />
@@ -591,6 +589,7 @@
     <MESSAGE value="Create Post" />
     <MESSAGE value="Read Post" />
     <MESSAGE value="Update Post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Post" />
+    <MESSAGE value="Delete Post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete Post" />
   </component>
 </project>
