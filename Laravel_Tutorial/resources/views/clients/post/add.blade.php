@@ -55,7 +55,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Thêm mới</button>
-        <a href="{{route('posts')}}" class="btn btn-warning">Quay lại</a>
+        <a href="{{route('home')}}" class="btn btn-warning">Quay lại</a>
         @csrf
     </form>
 @endsection

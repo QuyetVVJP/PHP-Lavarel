@@ -34,4 +34,9 @@ class Post extends Model
     {
         return DB::table($this->table)->where('id',$id)->update($data);
     }
+
+    public function deletePost($id)
+    {
+        return DB::table($this->table)->where('id',$id)->delete();
+    }
 }

@@ -70,22 +70,23 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
 
 // Users
 //Route::prefix('users')->name('users.')->group(function (){
-    Route::get('/', [UserController::class, 'index'])->name('home');
-    Route::get('/add', [UserController::class,'add'])->name('add');
-    Route::post('/add', [UserController::class,'postAdd'])->name('post-add');
-    Route::get('/edit/{id}',[UserController::class,'getEdit'])->name('edit');
-    Route::post('/update',[UserController::class,'postEdit'])->name('postEdit');
-    Route::get('/delete/{id}', [UserController::class,'delete'])->name('delete');
+//    Route::get('/', [UserController::class, 'index'])->name('home2');
+//    Route::get('/add', [UserController::class,'add'])->name('add');
+//    Route::post('/add', [UserController::class,'postAdd'])->name('post-add');
+//    Route::get('/edit/{id}',[UserController::class,'getEdit'])->name('edit');
+//    Route::post('/update',[UserController::class,'postEdit'])->name('postEdit');
+//    Route::get('/delete/{id}', [UserController::class,'delete'])->name('delete');
 //});
 
-Route::prefix('post')->group(function (){
-    Route::get('/',[PostController::class, 'index'])->name('posts');
+
+    Route::get('/',[PostController::class, 'index'])->name('home');
     Route::get('/detail/{id}', [PostController::class,'getPost'])->name('detail');
     Route::get('/add', [PostController::class,'add'])->name('add');
     Route::post('/add', [PostController::class,'postAdd'])->name('postAdd');
     Route::get('/edit/{id}',[PostController::class,'getEdit'])->name('getEdit');
     Route::post('/update',[PostController::class,'postEdit'])->name('postEdit');
-});
+    Route::get('/delete/{id}', [PostController::class,'delete'])->name('delete');
+
 
 
 

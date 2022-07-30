@@ -39,7 +39,7 @@ class PostController extends Controller
         ];
 
         $this->post->addPost($dataInsert);
-        return redirect()->route('posts')->with('msg', 'Thêm bài viết thành công');
+        return redirect()->route('home')->with('msg', 'Thêm bài viết thành công');
     }
 
     public function getPost(Request $request, $id = 0)
@@ -52,10 +52,10 @@ class PostController extends Controller
                 $postDetail = $postDetail[0];
                 $title = $postDetail->title;
             } else {
-                return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+                return redirect()->route('home')->with('msg', 'Bài viết không tồn tại');
             }
         } else {
-            return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+            return redirect()->route('home')->with('msg', 'Bài viết không tồn tại');
         }
 
         return view('clients.post.detail', compact('title', 'postDetail'));
@@ -69,10 +69,10 @@ class PostController extends Controller
                 $request->session()->put('id', $id);
                 $postDetail = $postDetail[0];
             } else {
-                return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+                return redirect()->route('home')->with('msg', 'Bài viết không tồn tại');
             }
         } else {
-            return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+            return redirect()->route('home')->with('msg', 'Bài viết không tồn tại');
         }
         $allGroups = getAllGroups();
         return view('clients.post.edit', compact('title', 'postDetail','allGroups'));
@@ -94,6 +94,29 @@ class PostController extends Controller
         ];
 
         $this->post->updatePost($dataInsert, $id);
-        return redirect()->route('posts')->with('msg', 'Cập nhật bài viết thành công');
+        return redirect()->route('home')->with('msg', 'Cập nhật bài viết thành công');
+    }
+
+    public function delete($id = 0)
+    {
+        if (!empty($id)) {
+            $userDetail = $this->post->getDetail($id);
+            if (!empty($userDetail[0])) {
+
+                $deleteStatus = $this->post->deletePost($id);
+                if ($deleteStatus) {
+                    $msg = 'Xóa bài viết thành công';
+                } else {
+                    $msg = 'Bạn không thể xóa bài viết lúc này, vui lòng thử lại sau';
+                }
+            } else {
+                $msg = 'Bài viết không tồn tại';
+            }
+        } else {
+            $msg = 'Liên kết không tồn tại';
+        }
+
+        return redirect()->route('home')->with('msg', $msg);
+
     }
 }
