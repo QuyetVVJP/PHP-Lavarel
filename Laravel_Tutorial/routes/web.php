@@ -83,6 +83,8 @@ Route::prefix('post')->group(function (){
     Route::get('/detail/{id}', [PostController::class,'getPost'])->name('detail');
     Route::get('/add', [PostController::class,'add'])->name('add');
     Route::post('/add', [PostController::class,'postAdd'])->name('postAdd');
+    Route::get('/edit/{id}',[PostController::class,'getEdit'])->name('getEdit');
+    Route::post('/update',[PostController::class,'postEdit'])->name('postEdit');
 });
 
 

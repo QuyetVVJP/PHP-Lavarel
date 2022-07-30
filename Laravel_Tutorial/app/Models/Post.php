@@ -29,4 +29,9 @@ class Post extends Model
     {
         return DB::select('SELECT * FROM ' . $this->table . ' WHERE id = ?', [$id]);
     }
+
+    public function updatePost($data, $id)
+    {
+        return DB::table($this->table)->where('id',$id)->update($data);
+    }
 }

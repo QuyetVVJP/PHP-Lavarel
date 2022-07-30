@@ -60,4 +60,40 @@ class PostController extends Controller
 
         return view('clients.post.detail', compact('title', 'postDetail'));
     }
+
+    public function getEdit(Request $request, $id = 0){
+        $title = 'Cập nhật bài viết';
+        if (!empty($id)) {
+            $postDetail = $this->post->getDetail($id);
+            if (!empty($postDetail[0])) {
+                $request->session()->put('id', $id);
+                $postDetail = $postDetail[0];
+            } else {
+                return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+            }
+        } else {
+            return redirect()->route('posts')->with('msg', 'Bài viết không tồn tại');
+        }
+        $allGroups = getAllGroups();
+        return view('clients.post.edit', compact('title', 'postDetail','allGroups'));
+    }
+
+    public function postEdit(PostRequest $request)
+    {
+        $id = session('id');
+        if (empty($id)) {
+            return back()->with('msg', 'Liên kết không tồn tại');
+        }
+
+        $dataInsert = [
+            'title' => $request->title,
+            'author' => $request->author,
+            'contents' => $request->contents,
+            'group_id' => $request->group_id,
+            'create_at' =>date('Y-m-d H:i:s')
+        ];
+
+        $this->post->updatePost($dataInsert, $id);
+        return redirect()->route('posts')->with('msg', 'Cập nhật bài viết thành công');
+    }
 }

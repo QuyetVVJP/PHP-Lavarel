@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Create Post">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Read Post">
+      <change beforePath="$PROJECT_DIR$/.idea/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/PostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Requests/PostRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Models/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
     </list>
@@ -143,6 +144,7 @@
       <path value="$PROJECT_DIR$/Laravel_Tutorial/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/Laravel_Tutorial/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/Laravel_Tutorial/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/Laravel_Tutorial/vendor/tinymce/tinymce" />
     </include_path>
   </component>
   <component name="ProjectId" id="2C1gMb7EPauaj0Klsy6YFQpJYjt" />
@@ -203,14 +205,8 @@
       <workItem from="1658906457768" duration="41000" />
       <workItem from="1658937436210" duration="976000" />
       <workItem from="1658991798038" duration="596000" />
-      <workItem from="1659076787550" duration="11230000" />
-    </task>
-    <task id="LOCAL-00002" summary="3. Thiet lap cau hinh: &#10;- Doc ghi folder, timezone&#10;- file .env: APP_ENV, APP_DEBUG&#10;- CSDL: Neu phpmyadmin khong chay duoc, thi config lai port 3306 -&gt; 3307 tai file config.inc.php va my.ini, .env&#10;- Bat che do bao tri -&gt; php artisan down">
-      <created>1658066493001</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1658066493001</updated>
+      <workItem from="1659076787550" duration="16549000" />
+      <workItem from="1659178852964" duration="3575000" />
     </task>
     <task id="LOCAL-00003" summary="4.Route&#10;get, post, put, delete, patch, macth, any, prefix, redirect, parameter, name, middleware, call function from Controller&#10;Error 419: thieu token">
       <created>1658112671728</created>
@@ -548,7 +544,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659084432675</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="Read Post">
+      <created>1659098266933</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1659098266933</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +569,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Validation 5&#10;- create Rule Validation with Closure" />
     <MESSAGE value="Validation 7&#10;Xu ly form request bang ajax" />
     <MESSAGE value="Database 1&#10;- Thiet lap cau hinh &#10;- DB:select" />
     <MESSAGE value="Database 2&#10;- insert data tu Post Request" />
@@ -591,6 +593,7 @@
     <MESSAGE value="update README.md" />
     <MESSAGE value="Hien thi danh sach bai viet" />
     <MESSAGE value="Create Post" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Post" />
+    <MESSAGE value="Read Post" />
+    <option name="LAST_COMMIT_MESSAGE" value="Read Post" />
   </component>
 </project>
