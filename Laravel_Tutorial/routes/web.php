@@ -86,6 +86,7 @@ Route::get('/san-pham', [HomeController::class,'products'])->name('product');
     Route::get('/edit/{id}',[PostController::class,'getEdit'])->name('getEdit');
     Route::post('/update',[PostController::class,'postEdit'])->name('postEdit');
     Route::get('/delete/{id}', [PostController::class,'delete'])->name('delete');
+    Route::get('/about', [PostController::class, 'about'])->name('about');
 
 
 

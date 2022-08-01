@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Search">
+    <list default="true" id="85af4388-99a1-446f-9bc7-6a1a77f20402" name="Changes" comment="Pagination">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/post/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/blocks/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/blocks/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/blocks/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/clients/blocks/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/resources/views/layout/client.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Laravel_Tutorial/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,14 +203,8 @@
       <workItem from="1658937436210" duration="976000" />
       <workItem from="1658991798038" duration="596000" />
       <workItem from="1659076787550" duration="16549000" />
-      <workItem from="1659178852964" duration="7032000" />
-    </task>
-    <task id="LOCAL-00006" summary="8.View&#10;file blade.php su dung template engie">
-      <created>1658154217055</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1658154217055</updated>
+      <workItem from="1659178852964" duration="13180000" />
+      <workItem from="1659271148992" duration="1190000" />
     </task>
     <task id="LOCAL-00007" summary="9. HTTP Request">
       <created>1658216102798</created>
@@ -544,7 +542,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659186566165</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Pagination">
+      <created>1659187016777</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1659187016777</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -562,7 +567,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Database 3&#10;- update database" />
     <MESSAGE value="Database 4&#10;- DB::statement, delete" />
     <MESSAGE value="Query Builder 1" />
     <MESSAGE value="Query Builder 2&#10;- and, or, like,between, notBetween, whereIn, whereNotIn, whereNull" />
@@ -587,6 +591,7 @@
     <MESSAGE value="Update Post" />
     <MESSAGE value="Delete Post" />
     <MESSAGE value="Search" />
-    <option name="LAST_COMMIT_MESSAGE" value="Search" />
+    <MESSAGE value="Pagination" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pagination" />
   </component>
 </project>

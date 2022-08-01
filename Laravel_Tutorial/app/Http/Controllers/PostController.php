@@ -155,4 +155,9 @@ class PostController extends Controller
         return redirect()->route('home')->with('msg', $msg);
 
     }
+
+
+    public function about(){
+        return view('clients.about');
+    }
 }

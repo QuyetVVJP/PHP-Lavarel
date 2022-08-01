@@ -2,30 +2,17 @@
     <div class="container">
         <div class="row">
             <div class="col-4">
-                <h1>Unicode</h1>
+                <h1>Mainichi shinpo</h1>
             </div>
 
             <div class="col-8 d-flex justify-content-end" >
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{route('home')}}">Trang chu</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('home')}}">Trang chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gioi thieu </a>
+                        <a class="nav-link" href="{{route('about')}}">Giới thiệu </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{route('product')}}"> San pham</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Dich vu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">tin tuc</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Lien he</a>
-                    </li>
-
                 </ul>
             </div>
         </div>
