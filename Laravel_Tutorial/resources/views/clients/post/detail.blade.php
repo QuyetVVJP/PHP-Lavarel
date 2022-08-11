@@ -14,6 +14,9 @@
         <span>
             {!! $postDetail->contents !!}
         </span>
+        <span>
+            {{$postDetail->cmt}}
+        </span>
     </div>
 @endsection
 

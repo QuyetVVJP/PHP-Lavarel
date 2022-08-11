@@ -13,8 +13,9 @@ class Post extends Model
 
     public function getAllPost($filters = [], $keywords, $sortByArr = null, $perPage){
         $posts = DB::table($this->table)
-            ->select('post.*', 'groups.name as group_name')
-            ->join('groups', 'post.group_id', '=','groups.id');
+            ->select('post.*', 'groups.name as group_name', 'comment.content as cmt')
+            ->join('groups', 'post.group_id', '=','groups.id')
+            ->join('comment', 'post.id', '=','comment.post_id');
 
 
         $orderBy = 'post.create_at';
@@ -44,6 +45,7 @@ class Post extends Model
         }else{
             $posts = $posts->get();
         }
+
         return $posts;
     }
 
@@ -54,7 +56,15 @@ class Post extends Model
 
     public function getDetail($id)
     {
-        return DB::select('SELECT * FROM ' . $this->table . ' WHERE id = ?', [$id]);
+
+        return  DB::table($this->table)
+            ->select('post.*', 'groups.name as group_name', 'comment.content as cmt')
+            ->join('groups', 'post.group_id', '=','groups.id')
+            ->join('comment', 'post.id', '=','comment.post_id')
+            ->where('post.id',$id)
+            ->get();
+
+
     }
 
     public function updatePost($data, $id)

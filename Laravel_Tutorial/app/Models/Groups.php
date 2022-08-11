@@ -18,4 +18,9 @@ class Groups extends Model
             ->get();
         return $groups;
     }
+
+    public function posts()
+    {
+        $this->hasMany(Post::class);
+            }
 }

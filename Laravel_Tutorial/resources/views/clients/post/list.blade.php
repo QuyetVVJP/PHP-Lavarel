@@ -50,7 +50,7 @@
                     <td>{{$item->title}}</td>
                     <td>{{$item->author}}</td>
                     <td>{{$item->group_name}}</td>
-                    <td>{{$item->create_at}}</td>
+                    <td>{{$item->cmt}}</td>
                     <td><a href="{{route('detail',['id'=>$item->id])}}" class="btn btn-warning btn-sm"> Đọc</a> </td>
                 </tr>
             @endforeach
